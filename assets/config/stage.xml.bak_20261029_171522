@@ -1,0 +1,7 @@
+﻿<stages_config>	
+	
+	<!-- External Stage Assets -->
+	<stage id="palaceoftwilight" previewURL="assets/stage_preview/palaceoftwilight.png"/>
+	<stage id="snowpointtemple" previewURL="assets/stage_preview/snowpointtemple.png"/>
+	
+</stages_config>
