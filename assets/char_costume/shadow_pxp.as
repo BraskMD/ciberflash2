@@ -1,0 +1,45 @@
+﻿[{
+		"team": "red",
+		"hue": -2,
+		"saturation": 44,
+		"brightness": 2,
+		"contrast": 6
+	}, {
+		"team": "green",
+		"hue": 112,
+		"saturation": 25,
+		"brightness": -11,
+		"contrast": 12
+	}, {
+		"team": "blue",
+		"hue": -110,
+		"saturation": 1,
+		"brightness": -9,
+		"contrast": 13
+	}, {
+		"hue": -77,
+		"saturation": 10,
+		"brightness": -28,
+		"contrast": -22
+	}, {
+		"hue": 5,
+		"saturation": -72,
+		"brightness": -10,
+		"contrast": -10
+	}, {
+		"hue": 180,
+		"saturation": -200,
+		"brightness": -200,
+		"contrast": -200
+	}, {
+		"hue": 180,
+		"saturation": 17,
+		"brightness": -16,
+		"contrast": 73
+	}, {
+		"hue": 180,
+		"saturation": -72,
+		"brightness": -10,
+		"contrast": -10
+	}
+]
