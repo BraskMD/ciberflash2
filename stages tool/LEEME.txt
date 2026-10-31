@@ -1,0 +1,47 @@
+PORTEAR STAGES A FMC
+====================
+
+REQUISITOS
+  - Python 3.8 o superior (python.org; marca "Add Python to PATH" al instalar)
+  - Pillow, para la vista previa:  pip install pillow
+
+USO FACIL
+  Doble clic en  abrir_portear_stage.bat  (o:  python portear_stage.py)
+  Se abre una ventana:
+    1. Carpeta del juego (FMC): la que contiene "data" y "assets".
+    2. Stage (.ssf) a portar: el archivo de la version nueva.
+    3. Carpeta con las musicas: donde esten los .ssf de musica que usa ese stage.
+       (La herramienta te dice que musicas necesita; si faltan, el stage suena sin ellas.)
+    4. scripts.zip de FMC (opcional pero recomendado): le permite detectar solo que
+       funciones de la API le faltan a tu FMC.
+    5. Imagen de vista previa (opcional): una captura del stage. Se recorta a 640x360.
+       Si no la das, genera una automatica con los fondos del stage; revisala.
+    6. "Solo simular" no escribe nada: sirve para ver que haria.
+  Pulsa PORTEAR.
+
+POR CONSOLA
+  python portear_stage.py stage.ssf --game "C:\ruta\al\juego" --music "C:\musicas" ^
+         --scripts scripts.zip --name "Nombre Visible" [--preview captura.png] [--page 2]
+
+QUE HACE
+  - Lee id y guid del stage (no se cambian: deben coincidir con mappings.json).
+  - Anula dentro del .ssf las llamadas a funciones de la API que tu FMC no tiene.
+  - Copia el stage a data\stage y las musicas a data\sound.
+  - Anade las entradas a assets\config\mappings.json (stage, music, selector de stages,
+    stages aleatorios) y a assets\config\stage.xml. Antes de tocarlos hace una copia
+    .bak_FECHA junto al original.
+  - Crea la vista previa en assets\stage_preview\<id>.png (640x360).
+  - Si el stage ya existe en tu mappings.json, se detiene (usa --force para reemplazar
+    solo su .ssf).
+
+LO QUE NO HACE (hay que hacerlo UNA SOLA VEZ en el juego, con JPEXS)
+  La herramienta no modifica el SWF principal del juego. Para que los stages de
+  stage.xml funcionen y se vean bien, tu SWF necesita estas clases ya corregidas
+  (las que te di en esta conversacion): StageSelectMenu, FMCData, FMCManager,
+  StageButton y VaultMenu. Con eso hecho, no hace falta tocar mas codigo por stage.
+
+AVISOS QUE PUEDE DAR
+  - "Falta la musica": pasa la carpeta con ese .ssf de musica, o el stage sonara sin ella.
+  - "no se pudo anular sola": el stage llama a una funcion que FMC no tiene de una forma
+    que la herramienta no sabe parchear. Mandame el stage y lo reviso.
+  - Todos los jugadores online deben tener los mismos archivos.
