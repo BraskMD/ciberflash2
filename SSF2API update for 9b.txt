@@ -1,0 +1,118 @@
+
+
+        public static function addEventListener(param1:*, param2:String, param3:Function, param4:Object=null):void
+        {
+            if ((!(isReady())))
+            {
+                return;
+            };
+			if (param1 == null)
+			{
+				m_api.addEventListener(param2, param3, param4);
+			}
+			else
+			{
+				param1.addEventListener(param2, param3, param4);
+			}
+        }
+
+        public static function removeEventListener(param1:*, param2:String, param3:Function):void
+        {
+            if ((!(isReady())))
+            {
+                return;
+            };
+			if (param1 == null)
+            m_api.removeEventListener(param2, param3);
+			else
+            param1.removeEventListener(param2, param3);
+        }
+
+        public static function createTimer(param1:*, param2:int, param3:int, param4:Function, param5:Object=null):void
+        {
+            if ((!(isReady())))
+            {
+                return;
+            };
+			if (param1 == null)
+            m_api.createTimer(param2, param3, param4, param5);
+			else
+            param1.createTimer(param2, param3, param4, param5);
+        }
+
+        public static function destroyTimer(param1:*, param2:Function):void
+        {
+            if ((!(isReady())))
+            {
+                return;
+            };
+			if (param1 == null)
+            m_api.destroyTimer(param2);
+			else
+            param1.destroyTimer(param2);
+        }
+      
+      public static function getPlayer(param1:*) : *
+      {
+         if(param1 is MovieClip)
+         {
+            MovieClip(param1).stop();
+         }
+         if(!isReady())
+         {
+            return null;
+         }
+         return m_api.getPlayer(param1);
+      }
+      
+      public static function getCharacter9B(param1:*) : *
+      {
+         if(param1 is MovieClip)
+         {
+            MovieClip(param1).stop();
+         }
+         if(!isReady())
+         {
+            return null;
+         }
+         return m_api.getCharacter9B(param1);
+      }
+      
+      public static function getProjectile9B(param1:*) : *
+      {
+         if(param1 is MovieClip)
+         {
+            MovieClip(param1).stop();
+         }
+         if(!isReady())
+         {
+            return null;
+         }
+         return m_api.getProjectile9B(param1);
+      }
+      
+      public static function getItem9B(param1:*) : *
+      {
+         if(param1 is MovieClip)
+         {
+            MovieClip(param1).stop();
+         }
+         if(!isReady())
+         {
+            return null;
+         }
+         return m_api.getItem9B(param1);
+      }
+      
+      public static function getEnemy9B(param1:*) : *
+      {
+         if(param1 is MovieClip)
+         {
+            MovieClip(param1).stop();
+         }
+         if(!isReady())
+         {
+            return null;
+         }
+         return m_api.getEnemy9B(param1);
+      }
