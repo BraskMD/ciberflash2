@@ -1,6 +1,7 @@
 ﻿<stages_config>	
 	
 	<!-- External Stage Assets -->
+	<stage id="afinfierno" previewURL="assets/stage_preview/afinfierno.png"/>
 	<stage id="floatingisland" previewURL="assets/stage_preview/floatingisland.png"/>
 	<stage id="seaoffragments" previewURL="assets/stage_preview/seaoffragments.png"/>
 	<stage id="heaven" previewURL="assets/stage_preview/heaven.png"/>

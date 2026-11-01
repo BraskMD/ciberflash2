@@ -1,5 +1,15 @@
 {
 	"music": {
+		"bgm_hellsaga": {
+			"guid": "0esencia3c41a2a-a110-4f35-9bc7-3a4a8f1c1631",
+			"file": "bgm_hellsaga.ssf",
+			"file_pub": "bgm_hellsaga.ssf"
+		},
+		"bgm_aftrack05": {
+			"guid": "87c9sdsdasdsd720f-d8ed-4ca7-8e2d-7724e3add219",
+			"file": "bgm_aftrack05.ssf",
+			"file_pub": "bgm_aftrack05.ssf"
+		},
 		"bgm_zantbattle": {
 			"guid": "315c95b3-dc71-475e-9294-9862076741cb",
 			"file": "bgm_zantbattle.ssf",
@@ -1390,6 +1400,12 @@
 		}
 	},
 	"stage": {
+		"afinfierno": {
+			"guid": "6a858747-1df4-4bf2-ae09-090c27db416c",
+			"file": "afinfierno.ssf",
+			"file_pub": "afinfierno.ssf",
+			"name": "Infierno"
+		},
 		"floatingisland": {
 			"guid": "elquetefaggeo",
 			"file": "floatingisland.ssf",
@@ -3171,7 +3187,8 @@
 			"rows_2": [
 				["aetherhigh", "arkmaxim", "armsstage", "blizzardbuffalo", "burnedtower", "chunin", "citytrial", "cybersworld", "diehouse", "eoh", "explodatorium", "fortnitebus"],
 				["fancyshop", "gamer", "greengreen", "hongkong97", "innerworld", "jevilstage", "kingdicestage", "loungetown", "mariocircuit", "mmzerostage", "mutecity", "polus"],
-				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "random"]
+				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland"],
+			["afinfierno", "random"]
 			]
 		}
 	},
@@ -3259,7 +3276,7 @@
 	},
 	"random_stages": {
 		"stages": ["battlefield", "finaldestination", "metalcavern", "tinystage", "galaxytours", "bowserscastle", "mushroomkingdom3", "yoshisisland", "emeraldcave", "warioware", "junglehijinx", "gangplankgalleon", "hylianskies", "clocktown", "pokemoncolosseum", "lakeofrage", "sandocean", "flatzoneplus", "rainbowroute", "butterbuilding", "meteovoyage", "palutenasshrine", "venuslighthouse", "crateria", "phase8", "saturnvalley", "devilsmachine", "desk", "casinonightzone", "skysanctuary", "chaosshrine", "lunarcore", "twilighttown", "skullfortress", "centralhighway", "pacmaze", "towerofsalvation", "bombfactory", "draculascastle", "steeldiver", "nintendo3ds", "huecomundo", "konohavillage", "finalvalley", "planetnamek", "worldtournament", "thousandsunny", "waitingroom", "kingdom1", "peachscastle", "kingdom2", "yoshisisland64", "yoshisstory", "hyrulecastle64", "hyruletemple", "saffroncity", "dreamland", "sectorz", "fourside", "castlesiege", "smashville", "greenhillzone", "theworldthatneverwas", "skypillar", "suzakucastle", "krazoapalace", "urbanchampion", "fairyglade",
-		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland"]
+		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "afinfierno"]
 	},
 	"match_results_screen": {
 		"show_losing_team": false,
