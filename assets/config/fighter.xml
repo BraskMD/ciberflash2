@@ -471,8 +471,17 @@
 			costume_data = "assets/char_costume/piccolo.as"
 		/>
 	</fighter>
+
+	<fighter id = "vegeta" alternateID = "vegetaps" charName = "Vegeta" cssName = "VEGETA" txtNumber = "12" info = "By Smash Fan">
+		<resource
+			 portrait = "assets/char_portrait/vegeta.png"
+            icon = "assets/char_icon/vegetaps_css.png"
+            fs_cutin = "assets/char_triangle/vegeta_triangle.png"
+			costume_data = "assets/char_costume/vegeta.as"
+		/>
+	</fighter>
 	
-	<fighter id = "vegetaps" charName = "Vegeta" cssName = "VEGETA" txtNumber = "12" info = "By Smash Fan">
+	<fighter id = "vegetaps" alternateID = "vegeta" charName = "Vegeta (OLD)" cssName = "VEGETA" txtNumber = "12" info = "By Smash Fan">
         <resource
             portrait = "assets/char_portrait/vegetaps.png"
             icon = "assets/char_icon/vegetaps_css.png"
@@ -791,6 +800,15 @@
 			costume_data = ""
 		/>
 	</fighter>
+
+	<fighter id = "knight" charName = "The Knight" cssName = "KNIGHT" txtNumber = "12" info = "By Smash Fan">
+		<resource
+			portrait = "assets/char_portrait/knight.png"
+	                icon = "assets/char_icon/knight_css.png"
+			fs_cutin = "assets/char_triangle/knight_triangle.png"
+			costume_data = "assets/char_costume/knight.as"
+		/>
+	</fighter>
 	
 	<fighter id = "sansmetal" alternateID = "sansnokia" charName = "Sans" cssName = "SANS" txtNumber = "12" info = "By Metalový Šutrák">
 		<resource
@@ -851,6 +869,7 @@
 			costume_data = "assets/char_costume/chuck.as"
 		/>
 	</fighter>
+
 	
 	<fighter id = "hypergon" charName = "Hypergon" cssName = "HYPERGON" txtNumber = "10" info = "By Nicolas C">
 		<resource

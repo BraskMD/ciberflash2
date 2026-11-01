@@ -1,15 +1,15 @@
 {
 	"music": {
-		"bgm_hellsaga": {
-			"guid": "0esencia3c41a2a-a110-4f35-9bc7-3a4a8f1c1631",
-			"file": "bgm_hellsaga.ssf",
-			"file_pub": "bgm_hellsaga.ssf"
-		},
-		"bgm_aftrack05": {
-			"guid": "87c9sdsdasdsd720f-d8ed-4ca7-8e2d-7724e3add219",
-			"file": "bgm_aftrack05.ssf",
-			"file_pub": "bgm_aftrack05.ssf"
-		},
+        "bgm_hellsaga": {
+            "guid": "0esencia3c41a2a-a110-4f35-9bc7-3a4a8f1c1631",
+            "file": "bgm_hellsaga.ssf",
+            "file_pub": "bgm_hellsaga.ssf"
+        },
+        "bgm_aftrack05": {
+            "guid": "87c9sdsdasdsd720f-d8ed-4ca7-8e2d-7724e3add219",
+            "file": "bgm_aftrack05.ssf",
+            "file_pub": "bgm_aftrack05.ssf"
+        },
 		"bgm_zantbattle": {
 			"guid": "315c95b3-dc71-475e-9294-9862076741cb",
 			"file": "bgm_zantbattle.ssf",
@@ -1400,12 +1400,12 @@
 		}
 	},
 	"stage": {
-		"afinfierno": {
-			"guid": "6a858747-1df4-4bf2-ae09-090c27db416c",
-			"file": "afinfierno.ssf",
-			"file_pub": "afinfierno.ssf",
-			"name": "Infierno"
-		},
+        "afinfierno": {
+            "guid": "6a858747-1df4-4bf2-ae09-090c27db416c",
+            "file": "afinfierno.ssf",
+            "file_pub": "afinfierno.ssf",
+            "name": "Infierno"
+        },
 		"floatingisland": {
 			"guid": "elquetefaggeo",
 			"file": "floatingisland.ssf",
@@ -3124,6 +3124,21 @@
 			"guid": "hola-soy-mr-increible-quexdduyd",
 			"name": "mrincredible"
 		},
+		"vegeta": {
+			"file": "vegeta.ssf",
+			"file_pub": "vegeta.ssf",
+			"guid": "1852e175-9647-4342-a726-105cb4fab89a",
+			"name": "Vegeta",
+	                "seriesIcon": "DragonBallsign"
+		},
+
+                "knight": {
+			"file": "knight.ssf",
+			"file_pub": "knight.ssf",
+			"guid": "65319743-holl-4f70-87ce-cee7a2551a18",
+			"name": "knight",
+	                "seriesIcon": null
+		},
 		"tien": {
 			"file": "tien.ssf",
 			"file_pub": "tien.ssf",
@@ -3151,7 +3166,7 @@
 		"rows_2_name": "ANIME",
 		"rows_2": [
 
-			["goku", "vegetaps", "piccolo", "gohan", "trunkz", "frieza", "cooler", "broly", "bardock", "zamasu", "bills", "jiren", "gogetassj4"],
+			["goku", "vegeta", "piccolo", "gohan", "trunkz", "frieza", "cooler", "broly", "bardock", "zamasu", "bills", "jiren", "gogetassj4"],
 			["luffy", "buggy", "enel", "naruto", "sakuke", "kakashi", "lee", "itachi", "ichigo", "uryu", "ogichi", "grimmjow", "ulquiorra"],
 			["jonathan", "joseph_joestar", "jotaro", "diojx", "josuke_higashikata", "kira", "yusuke", "jin", "gon", "saitama", "ppp", "deku", "baki"],
 			["rena", "hanyuu", "takano", "timou_kagerou", "timou_sakuya", "len", "saber", "gintoki", "inuyasha"]
@@ -3161,7 +3176,7 @@
 
 			["ristar", "pacman", "lloyd", "kratosfake", "megaman", "megamanx", "zero", "dante", "vergil_nicolas", "ryu", "terry", "kyo", "chang"],
 			["sansmetal", "doggotedd", "jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "freddy", "zeta", "lilac"],
-			["hypergon", "spidey", "mrincredible", "anakin", "skibidi_toilet", "sandbag"],
+			["hypergon", "spidey", "mrincredible", "anakin", "skibidi_toilet", "sandbag", "knight"],
 			["random"]
 		],
 		"rows_4_name": "BROKEN",
@@ -3187,8 +3202,7 @@
 			"rows_2": [
 				["aetherhigh", "arkmaxim", "armsstage", "blizzardbuffalo", "burnedtower", "chunin", "citytrial", "cybersworld", "diehouse", "eoh", "explodatorium", "fortnitebus"],
 				["fancyshop", "gamer", "greengreen", "hongkong97", "innerworld", "jevilstage", "kingdicestage", "loungetown", "mariocircuit", "mmzerostage", "mutecity", "polus"],
-				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland"],
-			["afinfierno", "random"]
+				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "random"]
 			]
 		}
 	},
@@ -3270,13 +3284,13 @@
 			"blackgoku", "gohan_monksuke", "trunkz", "gohanblanco", "evilgoku", "zamasu", "broly", "frieza", "ichigogh", "ogichi", "grimmjow", "ulquiorra",
 			"buggy", "enel", "moria", "kidnaruto", "ksasuke", "kakashi", "itachi", "joseph_joestar", "josuke_higashikata", "kira", "sansmetal", "doggotedd", "vergil",
 			"jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "saitama", "ppp", "oldma", "yusuke", "kyo",
-			"knuckles", "shadow", "silver", "sanic", "uganknux", "zeta", "chuck", "rena", "hanyuu", "takano", 
-			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "zero", "rosy", "spidey", "piccolo", "anakin", "vegetaps", "terry", "kingdedede", "vergilps", "gokusf", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom" ],
+			"knuckles", "shadow", "silver", "sanic", "uganknux", "zeta", "chuck", "rena", "hanyuu", "takano", "knight", 
+			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokusf", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom" ],
 		"classic_characters": ["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "donkeykong", "link", "zelda", "sheik", "ganondorf", "pikachu", "pichu", "jigglypuff", "lucario", "kirby", "metaknight", "bandanadee", "fox", "falco", "krystal", "samus", "zamus", "captainfalcon", "ness", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "sonic", "tails", "megaman", "ryu", "pacman", "lloyd", "simon", "bomberman", "blackmage", "sora", "rayman", "goku", "luffy", "naruto", "ichigo", "sandbag"]
 	},
 	"random_stages": {
 		"stages": ["battlefield", "finaldestination", "metalcavern", "tinystage", "galaxytours", "bowserscastle", "mushroomkingdom3", "yoshisisland", "emeraldcave", "warioware", "junglehijinx", "gangplankgalleon", "hylianskies", "clocktown", "pokemoncolosseum", "lakeofrage", "sandocean", "flatzoneplus", "rainbowroute", "butterbuilding", "meteovoyage", "palutenasshrine", "venuslighthouse", "crateria", "phase8", "saturnvalley", "devilsmachine", "desk", "casinonightzone", "skysanctuary", "chaosshrine", "lunarcore", "twilighttown", "skullfortress", "centralhighway", "pacmaze", "towerofsalvation", "bombfactory", "draculascastle", "steeldiver", "nintendo3ds", "huecomundo", "konohavillage", "finalvalley", "planetnamek", "worldtournament", "thousandsunny", "waitingroom", "kingdom1", "peachscastle", "kingdom2", "yoshisisland64", "yoshisstory", "hyrulecastle64", "hyruletemple", "saffroncity", "dreamland", "sectorz", "fourside", "castlesiege", "smashville", "greenhillzone", "theworldthatneverwas", "skypillar", "suzakucastle", "krazoapalace", "urbanchampion", "fairyglade",
-		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "afinfierno"]
+		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland"]
 	},
 	"match_results_screen": {
 		"show_losing_team": false,
