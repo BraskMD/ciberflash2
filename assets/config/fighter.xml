@@ -168,11 +168,11 @@
 		/>
 	</fighter>
 	
-	<fighter id = "nazi" charName = "Perfect Nazo" cssName = "NAZO" txtNumber = "12" info = "By GreenGalaxio">
+	<fighter id = "nazi"  alternateID = "nazo" charName = "Perfect Nazo" cssName = "NAZO" txtNumber = "12" info = "By GreenGalaxio">
 		<resource
-			portrait = "assets/char_portrait/nazo.png"
-			icon = "assets/char_icon/nazo_css.png"
-			fs_cutin = "assets/char_triangle/nazo_triangle.png"
+			portrait = "assets/char_portrait/pnazo.png"
+			icon = "assets/char_icon/pnazo_css.png"
+			fs_cutin = "assets/char_triangle/pnazo_triangle.png"
 		/>
 	</fighter>
 	
@@ -809,6 +809,22 @@
 			costume_data = "assets/char_costume/knight.as"
 		/>
 	</fighter>
+
+<fighter id = "kidbuu" charName= "Kid Buu" cssName= "BUU" txtNumber= "10" info = "by chicken">
+		<resource
+			portrait = "assets/char_portrait/kidbuu.png"
+	                icon = "assets/char_icon/knight_css.png"
+			fs_cutin = "assets/char_triangle/kidbuu_triangle.png"
+/>
+	</fighter>	
+
+	<fighter id = "nazo"  alternateID = "nazi" charName = "Nazo" cssName= "NAZO" txtNumber="12" info = "by TEAM LISANDRO">
+		<resource
+			portrait = "assets/char_portrait/nazo.png"
+	                icon = "assets/char_icon/nazo_css.png"
+			fs_cutin = "assets/char_triangle/nazo_triangle.png"
+/>
+	</fighter>	
 	
 	<fighter id = "sansmetal" alternateID = "sansnokia" charName = "Sans" cssName = "SANS" txtNumber = "12" info = "By Metalový Šutrák">
 		<resource
