@@ -305,23 +305,21 @@ def rename_strings(d, mapping, log=None, code=None):
     for old, new in mapping.items():
         idx = [i for i, x in enumerate(a.str) if i > 0 and x == old]
         if not idx:
-            raise ValueError('No encuentro el texto \"%s\" dentro del archivo para cambiarlo.' % old)
-        i = idx[0]
-        # avisa si esa cadena se usa en mas sitios que el propio id/guid
+            raise ValueError('No encuentro el texto "%s" dentro del archivo para cambiarlo.' % old)
         uses = 0
         if code:
             for ins in code.values():
                 for off, op, v, ln in (ins or []):
-                    if op == 0x2C and v[0] == i:
+                    if op == 0x2C and v[0] in idx:
                         uses += 1
-        if i in a.mn_names:
-            uses += 1
+        uses += sum(1 for i in idx if i in a.mn_names)
         if uses > 1 and log is not None:
-            log.warn('El texto \"%s\" se usa en %d sitios dentro del archivo; al cambiarlo '
+            log.warn('El texto "%s" se usa en %d sitios dentro del archivo; al cambiarlo '
                      'cambian todos. Si algo falla al cargar, prueba con otro valor.' % (old, uses))
-        pre, end = a.str_pos[i]
         nb = new.encode('utf-8')
-        edits.append((pre, end, u30_enc(len(nb)) + nb))
+        for i in idx:                      # el pool puede tener la misma cadena repetida
+            pre, end = a.str_pos[i]
+            edits.append((pre, end, u30_enc(len(nb)) + nb))
     edits.sort(reverse=True)
     delta = 0
     for pre, end, repl in edits:
