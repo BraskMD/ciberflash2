@@ -3163,13 +3163,18 @@
 			"name": "Vegeta",
 	                "seriesIcon": "DragonBallsign"
 		},
-
                 "knight": {
 			"file": "knight.ssf",
 			"file_pub": "knight.ssf",
 			"guid": "65319743-holl-4f70-87ce-cee7a2551a18",
 			"name": "knight",
 	                "seriesIcon": null
+		},
+		"littlemac": {
+			"guid": "65319743-bb44-4f70-87ce-cee7a2551mac",
+			"file": "littlemac.ssf",
+			"file_pub": "littlemac.ssf",
+			"name": "Little Mac"
 		},
 
    "popple": {
@@ -3216,7 +3221,7 @@
 
 			["ristar", "pacman", "lloyd", "kratosfake", "megaman", "megamanx", "zero", "dante", "vergil_nicolas", "ryu", "terry", "kyo", "chang"],
 			["sansmetal", "doggotedd", "jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "freddy", "zeta", "lilac"],
-			["hypergon", "spidey", "mrincredible", "anakin", "skibidi_toilet", "sandbag", "knight", "popple", "kidbuu"],
+			["hypergon", "spidey", "mrincredible", "anakin", "skibidi_toilet", "sandbag", "knight", "littlemac", "popple", "kidbuu"],
 			["random"]
 		],
 		"rows_4_name": "BROKEN",
@@ -3326,7 +3331,7 @@
 			"buggy", "enel", "moria", "kidnaruto", "ksasuke", "kakashi", "itachi", "joseph_joestar", "josuke_higashikata", "kira", "sansmetal", "doggotedd", "vergil",
 			"jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "saitama", "ppp", "oldma", "yusuke", "kyo",
 			"knuckles", "shadow", "silver", "sanic", "uganknux", "zeta", "chuck", "rena", "hanyuu", "takano", "knight", "kidbuu", "nazo",
-			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokusf", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom" ],
+			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokusf", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom", "littlemac"],
 		"classic_characters": ["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "donkeykong", "link", "zelda", "sheik", "ganondorf", "pikachu", "pichu", "jigglypuff", "lucario", "kirby", "metaknight", "bandanadee", "fox", "falco", "krystal", "samus", "zamus", "captainfalcon", "ness", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "sonic", "tails", "megaman", "ryu", "pacman", "lloyd", "simon", "bomberman", "blackmage", "sora", "rayman", "goku", "luffy", "naruto", "ichigo", "sandbag"]
 	},
 	"random_stages": {

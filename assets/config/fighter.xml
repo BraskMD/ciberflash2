@@ -903,6 +903,16 @@
 			fs_cutin = "assets/char_triangle/hypergon_triangle.png"
 		/>
 	</fighter>
+
+
+	<fighter id = "littlemac" charName = "Little Mac" cssName = "LITTLE MAC" txtNumber = "10" info = "By Smash Fan">
+		<resource
+			portrait = "assets/char_portrait/littlemac_portrait.png"
+			icon = "assets/char_icon/littlemac_css.png"
+			fs_cutin = "assets/char_triangle/littlemac_triangle.png"
+			costume_data = "assets/char_costume/littlemac.as"
+		/>
+	</fighter>
 	
 	<!-- Simple External Assets Example (no portrait whatsoever -->
 
