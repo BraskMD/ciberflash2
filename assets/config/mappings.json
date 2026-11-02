@@ -3139,6 +3139,14 @@
 			"name": "knight",
 	                "seriesIcon": null
 		},
+
+   "popple": {
+			"file": "popple.ssf",
+			"file_pub": "popple.ssf",
+			"guid": null,
+			"name": "popple",
+	                "seriesIcon": null
+		},
 		"tien": {
 			"file": "tien.ssf",
 			"file_pub": "tien.ssf",
@@ -3176,7 +3184,7 @@
 
 			["ristar", "pacman", "lloyd", "kratosfake", "megaman", "megamanx", "zero", "dante", "vergil_nicolas", "ryu", "terry", "kyo", "chang"],
 			["sansmetal", "doggotedd", "jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "freddy", "zeta", "lilac"],
-			["hypergon", "spidey", "mrincredible", "anakin", "skibidi_toilet", "sandbag", "knight"],
+			["hypergon", "spidey", "mrincredible", "anakin", "skibidi_toilet", "sandbag", "knight", "popple"],
 			["random"]
 		],
 		"rows_4_name": "BROKEN",

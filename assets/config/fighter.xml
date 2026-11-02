@@ -870,6 +870,15 @@
 		/>
 	</fighter>
 
+
+	<fighter id = "popple" charName = "Popple" cssName = "POPPLE" txtNumber = "12" info = "By Jhozo">
+		<resource
+		portrait = "assets/char_portrait/popple.png"
+			icon = "assets/char_icon/popple_css.png"
+			fs_cutin = "assets/char_triangle/popple_triangle.png"
+/>
+	</fighter>
+
 	
 	<fighter id = "hypergon" charName = "Hypergon" cssName = "HYPERGON" txtNumber = "10" info = "By Nicolas C">
 		<resource
