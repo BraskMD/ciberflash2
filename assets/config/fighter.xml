@@ -309,7 +309,7 @@
 		/>
 	</fighter>
 
-	<fighter id = "kingdededeps" alternateID = "kingdedede" charName = "King Dedede (PS)" cssName = "KING DEDEDE" txtNumber = "8" info = "From Project PS">
+	<fighter id = "kingdededeps" alternateID = "dedede" charName = "King Dedede (PS)" cssName = "KING DEDEDE" txtNumber = "8" info = "From Project PS">
 		<resource
 			portrait = "assets/char_portrait/kingdedede.png"
 			fs_cutin = "assets/char_triangle/kingdedede_triangle.png"
@@ -932,7 +932,16 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 			costume_data = "assets/char_costume/mewtwo.as"
 		/>
 	</fighter>
-	
+
+	<fighter id = "dedede" alternateID = "kingdedede" charName = "King Dedede" cssName = "K. DEDEDE" txtNumber = "11" info = "1.4">
+		<resource
+			portrait = "assets/char_portrait/dedede_portrait.png"
+	                icon = "assets/char_icon/dedede_css.png"
+			fs_cutin = "assets/char_triangle/dedede_triangle.png"
+			costume_data = "assets/char_costume/dedede.as"
+		/>
+	</fighter>
+
 	<!-- Simple External Assets Example (no portrait whatsoever -->
 
 	<fighter id = "jotaro_jotard" charName = "Jotardo" cssName = "JOTARD" txtNumber = "12" info = "By Me\nHe is crazy xd"/>

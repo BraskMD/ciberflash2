@@ -1402,6 +1402,13 @@
 			"guid": "sigv126s-20xx-0000-5434-zerob4fab89a",
 			"seriesIcon": "x_seriesIcon",
 			"name": "Zero"
+		},
+		"dedede": {
+			"guid": "02d29602-d514-4a98-8ac2-6afd498f3323",
+			"seriesIcon": "Kirby_Symbol",
+			"file": "dedede.ssf",
+			"file_pub": "Dedede.ssf",
+			"name": "King Dedede"
 		}
 	},
 	"stage": {
