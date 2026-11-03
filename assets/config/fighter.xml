@@ -551,6 +551,13 @@
 			fs_cutin = "assets/char_triangle/bardock_triangle.png"
 		/>
 	</fighter>
+
+	<fighter id="sonicxp" alternateID="" charName="Sonic" cssName="Sonic (XP)" info="By Link-One" txtNumber="12">
+		<resource portrait="assets/char_portrait/sonicxp.png" icon="assets/char_icon/sonicxp_css.png" fs_cutin="assets/char_triangle/sonicxp_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="sonicxp2" alternateID="" charName="Sonic (XP)" cssName="Sonic" info="By Link-One" txtNumber="12">
+		<resource portrait="assets/char_portrait/sonicxp2.png" icon="assets/char_icon/sonicxp2_css.png" fs_cutin="assets/char_triangle/sonicxp2_triangle.png" costume_data=""/>
+	</fighter>
 	
 	<fighter id = "cooler" charName = "Cooler" cssName = "COOLER" txtNumber = "12" info = "By CaixaX">
 		<resource
