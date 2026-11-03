@@ -927,6 +927,15 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 		/>
 	</fighter>
 	
+	<fighter id = "mewtwo" charName = "Mewtwo" cssName = "MEWTWO" txtNumber = "9" info = "By Temp64">
+		<resource
+			portrait = "assets/char_portrait/mewtwo_portrait.png"
+			icon = "assets/char_icon/mewtwo_css.png"
+			fs_cutin = "assets/char_triangle/mewtwo_triangle.png"
+			costume_data = "assets/char_costume/mewtwo.as"
+		/>
+	</fighter>
+	
 	<!-- Simple External Assets Example (no portrait whatsoever -->
 
 	<fighter id = "jotaro_jotard" charName = "Jotardo" cssName = "JOTARD" txtNumber = "12" info = "By Me\nHe is crazy xd"/>
