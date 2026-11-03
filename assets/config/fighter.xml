@@ -810,11 +810,27 @@
 		/>
 	</fighter>
 
-<fighter id = "kidbuu" charName= "Kid Buu" cssName= "BUU" txtNumber= "10" info = "by chicken">
+<fighter id = "kidbuu" alternateID = "buu" charName= "Kid Buu" cssName= "BUU" txtNumber= "10" info = "by chicken">
 		<resource
 			portrait = "assets/char_portrait/kidbuu.png"
-	                icon = "assets/char_icon/knight_css.png"
+	                icon = "assets/char_icon/kidbuu_css.png"
 			fs_cutin = "assets/char_triangle/kidbuu_triangle.png"
+/>
+	</fighter>
+
+<fighter id = "buu" alternateID = "kidbuu" charName= "Majin Buu" cssName= "BUU" txtNumber= "12" info = "by Prj.Delta">
+		<resource
+			portrait = "assets/char_portrait/buu.png"
+	                icon = "assets/char_icon/buu_css.png"
+                        costume_data = "assets/char_costume/buu.as"
+/>
+	</fighter>
+
+<fighter id = "shovel_knight" charName= "Shovel Knight" cssName= "SHOVELKNIGHT" txtNumber= "7" info = "by ricardo mojones">
+		<resource
+			portrait = "assets/char_portrait/shovel_knight.png"
+	                icon = "assets/char_icon/shovelknight_css.png"
+fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 />
 	</fighter>	
 
@@ -901,16 +917,6 @@
 			portrait = "assets/char_portrait/hypergon.png"
 			icon = "assets/char_icon/hypergon_css.png"
 			fs_cutin = "assets/char_triangle/hypergon_triangle.png"
-		/>
-	</fighter>
-
-
-	<fighter id = "littlemac" charName = "Little Mac" cssName = "LITTLE MAC" txtNumber = "10" info = "By Smash Fan">
-		<resource
-			portrait = "assets/char_portrait/littlemac_portrait.png"
-			icon = "assets/char_icon/littlemac_css.png"
-			fs_cutin = "assets/char_triangle/littlemac_triangle.png"
-			costume_data = "assets/char_costume/littlemac.as"
 		/>
 	</fighter>
 	
