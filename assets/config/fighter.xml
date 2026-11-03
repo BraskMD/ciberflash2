@@ -949,4 +949,7 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 		/>
 	</fighter>
 
+	<fighter id="zoro" alternateID="" charName="Zoro" cssName="ZORO" info="By Cháu Bác Hồ" txtNumber="12">
+		<resource portrait="assets/char_portrait/zoro.png" icon="assets/char_icon/zoro_css.png" fs_cutin="assets/char_triangle/zoro_triangle.png" costume_data=""/>
+	</fighter>
 </fighter_config>
