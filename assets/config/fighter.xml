@@ -57,10 +57,14 @@
 		/>
 	</fighter>
 	
-	<fighter id = "soold" alternateID = "sunic" charName = "Sonic (0.9b)" cssName = "SONIC" txtNumber = "12">
+	<fighter id = "soold" alternateID = "sonicxp" charName = "Sonic (0.9b)" cssName = "SONIC" txtNumber = "12">
 		<resource
 			portrait = "assets/char_portrait/sonic9b.png"
 		/>
+	</fighter>
+	
+	<fighter id="sonicxp" alternateID="sunic" charName="Sonic (XP)" cssName="SONIC" info="By Link-One" txtNumber="12">
+		<resource portrait="assets/char_portrait/sonicxp.png" icon="assets/char_icon/sonicxp_css.png" fs_cutin="assets/char_triangle/sonicxp_triangle.png" costume_data=""/>
 	</fighter>
 	
 	<fighter id = "sunic" alternateID = "firesonic" charName = "Sonic (Revamped)" cssName = "SONIC" txtNumber = "12" info = "By GreenGalaxio">
@@ -551,13 +555,6 @@
 			fs_cutin = "assets/char_triangle/bardock_triangle.png"
 		/>
 	</fighter>
-
-	<fighter id="sonicxp" alternateID="" charName="Sonic" cssName="Sonic (XP)" info="By Link-One" txtNumber="12">
-		<resource portrait="assets/char_portrait/sonicxp.png" icon="assets/char_icon/sonicxp_css.png" fs_cutin="assets/char_triangle/sonicxp_triangle.png" costume_data=""/>
-	</fighter>
-	<fighter id="sonicxp2" alternateID="" charName="Sonic (XP)" cssName="Sonic" info="By Link-One" txtNumber="12">
-		<resource portrait="assets/char_portrait/sonicxp2.png" icon="assets/char_icon/sonicxp2_css.png" fs_cutin="assets/char_triangle/sonicxp2_triangle.png" costume_data=""/>
-	</fighter>
 	
 	<fighter id = "cooler" charName = "Cooler" cssName = "COOLER" txtNumber = "12" info = "By CaixaX">
 		<resource
@@ -952,10 +949,4 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 		/>
 	</fighter>
 
-	<fighter id="sonicxp" alternateID="" charName="Sonic" cssName="Sonic (XP)" info="By Link-One" txtNumber="12">
-		<resource portrait="assets/char_portrait/sonicxp.png" icon="assets/char_icon/sonicxp_css.png" fs_cutin="assets/char_triangle/sonicxp_triangle.png" costume_data=""/>
-	</fighter>
-	<fighter id="sonicxp2" alternateID="" charName="Sonic (XP)" cssName="Sonic" info="By Link-One" txtNumber="12">
-		<resource portrait="assets/char_portrait/sonicxp2.png" icon="assets/char_icon/sonicxp2_css.png" fs_cutin="assets/char_triangle/sonicxp2_triangle.png" costume_data=""/>
-	</fighter>
 </fighter_config>
