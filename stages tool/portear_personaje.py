@@ -118,7 +118,9 @@ def parse_abc(d, base, length):
         _, p = u30(b, p)
     n, p = u30(b, p)
     p += 8 * max(n - 1, 0)
+    _s0 = p
     n, p = u30(b, p)
+    a.lay = {'str_cnt': (_s0, p), 'str_n': n}
     a.str = ['']
     a.str_pos = [None]       # (inicio del prefijo de longitud, fin de los datos)
     for _ in range(max(n - 1, 0)):
@@ -127,6 +129,7 @@ def parse_abc(d, base, length):
         a.str.append(bytes(b[p:p + l]).decode('utf8', 'replace'))
         a.str_pos.append((st, p + l))
         p += l
+    a.lay['str_end'] = p
     n, p = u30(b, p)
     for _ in range(max(n - 1, 0)):
         p += 1
@@ -136,14 +139,19 @@ def parse_abc(d, base, length):
         c, p = u30(b, p)
         for _ in range(c):
             _, p = u30(b, p)
+    _s0 = p
     n, p = u30(b, p)
+    a.lay['mn_cnt'] = (_s0, p)
+    a.lay['mn_n'] = n
     a.mn = [None]
+    a.mn_raw = {}
     for _ in range(max(n - 1, 0)):
         k = b[p]
         p += 1
         if k in (7, 0xd):
             ns, p = u30(b, p)
             nm, p = u30(b, p)
+            a.mn_raw[len(a.mn)] = (k, ns, nm)
             a.mn.append(nm)
         elif k in (0xf, 0x10):
             nm, p = u30(b, p)
@@ -165,8 +173,14 @@ def parse_abc(d, base, length):
             a.mn.append(0)
         else:
             raise ValueError('multiname desconocido %x' % k)
+    a.lay['mn_end'] = p
+    _s0 = p
     n, p = u30(b, p)
+    a.lay['meth_cnt'] = (_s0, p)
+    a.lay['meth_n'] = n
+    a.meth_span = []
     for _ in range(n):
+        _ms = p
         pc, p = u30(b, p)
         _, p = u30(b, p)
         for _ in range(pc):
@@ -182,6 +196,8 @@ def parse_abc(d, base, length):
         if fl & 0x80:
             for _ in range(pc):
                 _, p = u30(b, p)
+        a.meth_span.append((_ms, p))
+    a.lay['meth_end'] = p
     n, p = u30(b, p)
     for _ in range(n):
         _, p = u30(b, p)
@@ -190,10 +206,15 @@ def parse_abc(d, base, length):
             _, p = u30(b, p)
             _, p = u30(b, p)
 
+    a.tr_info = []
+
     def traits(p):
+        _cs = p
         c, p = u30(b, p)
         out = []
+        spans = []
         for _ in range(c):
+            _ts = p
             nm, p = u30(b, p)
             k = b[p]
             p += 1
@@ -213,6 +234,8 @@ def parse_abc(d, base, length):
                 for _ in range(c2):
                     _, p = u30(b, p)
             out.append((nm, kind, d_))
+            spans.append((_ts, p, k))
+        a.tr_info.append((_cs, _cs + len(u30_enc(c)), c, spans, p))
         return out, p
 
     n, p = u30(b, p)
@@ -239,12 +262,19 @@ def parse_abc(d, base, length):
     for _ in range(c):
         _, p = u30(b, p)
         _, p = traits(p)
+    _s0 = p
     c, p = u30(b, p)
+    a.lay['body_cnt'] = (_s0, p)
+    a.lay['body_n'] = c
     a.body = {}          # metodo -> (offset absoluto del codigo, longitud)
+    a.body_span = {}     # metodo -> (inicio, fin, (max_stack, locales, scope_ini, scope_max))
     for _ in range(c):
+        st = p
         m, p = u30(b, p)
+        hv = []
         for _ in range(4):
-            _, p = u30(b, p)
+            v_, p = u30(b, p)
+            hv.append(v_)
         cl, p = u30(b, p)
         a.body[m] = (p, cl)
         p += cl
@@ -252,6 +282,8 @@ def parse_abc(d, base, length):
         for _ in range(ec * 5):
             _, p = u30(b, p)
         _, p = traits(p)
+        a.body_span[m] = (st, p, tuple(hv))
+    a.lay['body_end'] = p
     a.d = d
     a.mn_names = set(x for x in a.mn if x)
     return a
@@ -543,6 +575,316 @@ def rename_symbolclass(d, mapping):
             d[hp:p + l] = struct.pack('<HI', (76 << 6) | 63, len(out)) + bytes(out)
             return d
     return d
+
+
+SECURITY_CALLS = ('allowDomain', 'allowInsecureDomain')
+
+
+def patch_security(d, info, log):
+    """Anula Security.allowDomain(...): en una aplicacion de escritorio lanza el
+    error #3207 y aborta el resto del codigo (frame1 del stage: camara, fondo, musica)."""
+    a = info.abc
+    patched = 0
+    for m, ins in info.code.items():
+        if not ins:
+            continue
+        targets = set()
+        for off, op, v, ln in ins:
+            if 0x0C <= op <= 0x1A:
+                targets.add(off + ln + v[0])
+        for k, (off, op, v, ln) in enumerate(ins):
+            if op != 0x4F or mname(a, v[0]) not in SECURITY_CALLS:
+                continue
+            argc = v[1]
+            if k - argc - 1 < 0:
+                continue
+            recv = ins[k - argc - 1]
+            args = ins[k - argc:k]
+            if recv[1] == 0x60 and mname(a, recv[2][0]) == 'Security' and \
+                    all(x[1] in LITERALS for x in args):
+                start, end = recv[0], off + ln
+                if any(start < t_ < end for t_ in targets):
+                    continue
+                for i in range(start, end):
+                    d[i] = 0x02
+                patched += 1
+                log('  Anulada la llamada a Security.%s(...) en %s (en FMC da el error #3207 y '
+                    'cortaba el stage)' % (mname(a, v[0]), info.owner.get(m, '?')))
+    return patched
+
+
+def engine_identifiers(path):
+    """Conjunto de identificadores presentes en los scripts de FMC (carpeta o zip)."""
+    ids = set()
+    tok = re.compile(r'[A-Za-z_][A-Za-z_0-9]*')
+    if path.lower().endswith('.zip'):
+        z = zipfile.ZipFile(path)
+        for n in z.namelist():
+            if n.endswith('.as'):
+                ids.update(tok.findall(z.read(n).decode('utf-8', 'replace')))
+    else:
+        for root, _, files in os.walk(path):
+            for f in files:
+                if f.endswith('.as'):
+                    with open(os.path.join(root, f), encoding='utf-8', errors='replace') as fh:
+                        ids.update(tok.findall(fh.read()))
+    return ids
+
+
+def engine_gaps(info, d_syms, eng):
+    """Funciones que el personaje llama y que el motor de FMC no tiene (ni el propio archivo define)."""
+    a = info.abc
+    own = set()
+    classes = set()
+    for i, (nm, ii, tr) in enumerate(a.inst):
+        classes.add(mname(a, nm))
+        for x, k, m in tr + a.cls[i][1]:
+            own.add(mname(a, x))
+    for s in d_syms:
+        classes.update(s.split('.'))
+    calls = {}
+    for m, ins in info.code.items():
+        for off, op, v, ln in (ins or []):
+            if op in (0x46, 0x4F, 0x4C, 0x4E, 0x4A, 0x45):
+                n = mname(a, v[0])
+                calls.setdefault(n, set()).add(info.owner.get(m, '?'))
+    return dict((n, w) for n, w in calls.items()
+                if n not in eng and n not in own and n not in classes and not n.startswith('_')
+                and n not in SECURITY_CALLS)
+
+
+# --------------------------------------------------------------------------
+#  Parche del SSF2API interno de los archivos 9B (SSF2API update for 9b)
+#  El archivo trae su propio SSF2API con addEventListener(param1..4) que pasa los 4
+#  argumentos al motor. El motor de FMC (api/SSF2API) solo acepta 3, asi que cada
+#  registro de evento da error. La version nueva usa param1 como destino: si es null llama
+#  al motor con 3 argumentos y si no, llama al addEventListener del propio objeto.
+# --------------------------------------------------------------------------
+API_WRAPPERS = {            # nombre: argumentos (locales) que se pasan a la llamada
+    'addEventListener': [2, 3, 4],
+    'removeEventListener': [2, 3],
+    'createTimer': [2, 3, 4, 5],
+    'destroyTimer': [2],
+}
+
+
+def _getlocal(n):
+    return bytes([0xD0 + n]) if n <= 3 else b'\x62' + u30_enc(n)
+
+
+def _s24(v):
+    return struct.pack('<i', v)[:3]
+
+
+def build_api_wrapper(i_find, i_call_ready, i_mapi, i_name, args):
+    """Cuerpo de: if(!isReady()) return; if(p1==null) m_api.X(args) else p1.X(args);"""
+    pre = (b'\xd0\x30' + b'\x5d' + u30_enc(i_find) + b'\x46' + u30_enc(i_call_ready) + u30_enc(0)
+           + b'\x96' + b'\x12' + _s24(1) + b'\x47')
+    call_args = b''.join(_getlocal(n) for n in args)
+    call = b'\x4f' + u30_enc(i_name) + u30_enc(len(args))
+    then_b = b'\x60' + u30_enc(i_mapi) + call_args + call
+    else_b = _getlocal(1) + call_args + call
+    jump = b'\x10' + _s24(len(else_b))
+    test = _getlocal(1) + b'\x20' + b'\x14' + _s24(len(then_b) + len(jump))
+    return pre + test + then_b + jump + else_b + b'\x47'
+
+
+def patch_api_wrappers(d, info, log):
+    """Pone la version nueva de addEventListener/removeEventListener/createTimer/destroyTimer en
+    el SSF2API interno del archivo. Devuelve (bytes, cantidad de metodos cambiados)."""
+    a = info.abc
+    api = None
+    for i, (nm, ii, tr) in enumerate(a.inst):
+        if mname(a, nm) == 'SSF2API':
+            api = i
+    if api is None:
+        return d, 0
+    edits = []
+    done = 0
+    for x, k, m in a.cls[api][1]:
+        name = mname(a, x)
+        if name not in API_WRAPPERS or k != 1 or m not in a.body_span:
+            continue
+        args = API_WRAPPERS[name]
+        ins = info.code.get(m) or []
+        i_find = i_ready = i_mapi = i_call = None
+        argc = None
+        for off, op, v, ln in ins:
+            if op == 0x5D and mname(a, v[0]) == 'isReady' and i_find is None:
+                i_find = v[0]
+            elif op == 0x46 and mname(a, v[0]) == 'isReady' and i_ready is None:
+                i_ready = v[0]
+            elif op == 0x60 and mname(a, v[0]) == 'm_api' and i_mapi is None:
+                i_mapi = v[0]
+            elif op == 0x4F and mname(a, v[0]) == name:
+                i_call, argc = v[0], v[1]
+        if None in (i_find, i_ready, i_mapi, i_call):
+            log.warn('SSF2API.%s tiene una forma que no reconozco: no la toco.' % name)
+            continue
+        if argc == len(args):
+            continue                      # ya tiene la version nueva
+        code = build_api_wrapper(i_find, i_ready, i_mapi, i_call, args)
+        st, en, hv = a.body_span[m]
+        body = (u30_enc(m) + u30_enc(max(hv[0], len(args) + 4)) + u30_enc(max(hv[1], len(args) + 2))
+                + u30_enc(hv[2]) + u30_enc(max(hv[3], hv[2] + 1)) + u30_enc(len(code)) + code
+                + u30_enc(0) + u30_enc(0))
+        edits.append((st, en, body))
+        done += 1
+        log('  SSF2API.%s actualizado (version nueva, con destino)' % name)
+    if not edits:
+        return d, 0
+    d = bytearray(d)
+    hp, p, l = find_abc_tag(d)
+    edits.sort(reverse=True)
+    delta = 0
+    for st, en, body in edits:
+        d[st:en] = body
+        delta += len(body) - (en - st)
+    if struct.unpack_from('<H', d, hp)[0] & 63 != 63:
+        raise ValueError('El tag DoABC usa cabecera corta; no se puede reescribir con seguridad.')
+    struct.pack_into('<I', d, hp + 2, l + delta)
+    return d, done
+
+
+NEW_GETTERS = ['getPlayer', 'getCharacter9B', 'getProjectile9B', 'getItem9B', 'getEnemy9B']
+
+
+def add_api_getters(d, info, log):
+    """Anade al SSF2API interno los metodos getPlayer/getCharacter9B/getProjectile9B/getItem9B/
+    getEnemy9B (parte de 'SSF2API update for 9b'). Copia la estructura de getCharacter, que es
+    identica salvo el nombre del metodo que llama. Devuelve (bytes, cantidad anadida)."""
+    a = info.abc
+    n_inst = len(a.inst)
+    api = None
+    for i, (nm, ii, tr) in enumerate(a.inst):
+        if mname(a, nm) == 'SSF2API':
+            api = i
+    if api is None:
+        return d, 0
+    cs, ce, cnt, spans, tr_end = a.tr_info[n_inst + api]
+    statics = {}
+    for j, (x, k, m) in enumerate(a.cls[api][1]):
+        statics[mname(a, x)] = (x, k, m, spans[j])
+    missing = [g for g in NEW_GETTERS if g not in statics]
+    if not missing:
+        return d, 0
+    if 'getCharacter' not in statics:
+        log.warn('No encuentro SSF2API.getCharacter para copiarlo: no anado %s.' % ', '.join(missing))
+        return d, 0
+    x_t, k_t, m_t, span_t = statics['getCharacter']
+    if x_t not in a.mn_raw or k_t != 1 or span_t[2] & 0x40:
+        log.warn('SSF2API.getCharacter tiene una forma que no reconozco: no anado %s.' % ', '.join(missing))
+        return d, 0
+    kmn, ns_t, _nm = a.mn_raw[x_t]
+    p = span_t[0]
+    _n, p = u30(d, p)
+    kind_byte = d[p]
+    p += 1
+    disp, p = u30(d, p)
+    _m, p = u30(d, p)
+    if p != span_t[1]:
+        log.warn('Rasgo de SSF2API.getCharacter no reconocido: no anado %s.' % ', '.join(missing))
+        return d, 0
+    meth_raw = bytes(d[a.meth_span[m_t][0]:a.meth_span[m_t][1]])
+    st_b, en_b, hv = a.body_span[m_t]
+    code_start, cl = a.body[m_t]
+    code = bytes(d[code_start:code_start + cl])
+    call = None
+    for off, op, v, ln in (info.code.get(m_t) or []):
+        if op == 0x46 and mname(a, v[0]) == 'getCharacter':
+            call = (off, ln, v[1])
+    if call is None:
+        log.warn('No reconozco el cuerpo de SSF2API.getCharacter: no anado %s.' % ', '.join(missing))
+        return d, 0
+    rel = call[0] - code_start
+    lay = a.lay
+    new_str, str_idx = bytearray(), {}
+    n_str = lay['str_n']
+    for g in missing:
+        if g in a.str:
+            str_idx[g] = a.str.index(g)
+        else:
+            nb = g.encode('utf-8')
+            str_idx[g] = n_str + len([1 for _ in str_idx.values() if _ >= n_str])
+            new_str += u30_enc(len(nb)) + nb
+    n_new_str = len(set(v for v in str_idx.values() if v >= n_str))
+    new_mn, new_meth, new_body, new_tr = bytearray(), bytearray(), bytearray(), bytearray()
+    for j, g in enumerate(missing):
+        mn_idx = lay['mn_n'] + j
+        m_idx = lay['meth_n'] + j
+        new_mn += bytes([kmn]) + u30_enc(ns_t) + u30_enc(str_idx[g])
+        new_meth += meth_raw
+        code2 = code[:rel] + b'\x46' + u30_enc(mn_idx) + u30_enc(call[2]) + code[rel + call[1]:]
+        new_body += (u30_enc(m_idx) + u30_enc(hv[0]) + u30_enc(hv[1]) + u30_enc(hv[2]) + u30_enc(hv[3])
+                     + u30_enc(len(code2)) + code2 + u30_enc(0) + u30_enc(0))
+        new_tr += u30_enc(mn_idx) + bytes([kind_byte]) + u30_enc(disp) + u30_enc(m_idx)
+    k = len(missing)
+    edits = [
+        (lay['str_cnt'][0], lay['str_cnt'][1], u30_enc(n_str + n_new_str)),
+        (lay['str_end'], lay['str_end'], bytes(new_str)),
+        (lay['mn_cnt'][0], lay['mn_cnt'][1], u30_enc(lay['mn_n'] + k)),
+        (lay['mn_end'], lay['mn_end'], bytes(new_mn)),
+        (lay['meth_cnt'][0], lay['meth_cnt'][1], u30_enc(lay['meth_n'] + k)),
+        (lay['meth_end'], lay['meth_end'], bytes(new_meth)),
+        (cs, ce, u30_enc(cnt + k)),
+        (tr_end, tr_end, bytes(new_tr)),
+        (lay['body_cnt'][0], lay['body_cnt'][1], u30_enc(lay['body_n'] + k)),
+        (lay['body_end'], lay['body_end'], bytes(new_body)),
+    ]
+    d = bytearray(d)
+    hp, p, l = find_abc_tag(d)
+    edits.sort(key=lambda e: (e[0], e[1]), reverse=True)
+    delta = 0
+    for st, en, new in edits:
+        d[st:en] = new
+        delta += len(new) - (en - st)
+    if struct.unpack_from('<H', d, hp)[0] & 63 != 63:
+        raise ValueError('El tag DoABC usa cabecera corta; no se puede reescribir con seguridad.')
+    struct.pack_into('<I', d, hp + 2, l + delta)
+    log('  SSF2API: anadidos %s (iguales a los del parche)' % ', '.join(missing))
+    return d, k
+
+
+# Eventos de la API antigua que el motor de FMC llama de otra forma. El archivo los registra con
+# el texto viejo y el motor nunca los dispara. (valor viejo -> valor que usa el motor)
+EVENT_RENAMES = {'groundLand': 'groundTouch'}
+
+
+def engine_event_values(scripts):
+    """Valores de las constantes de api/SSF2Event.as del motor (None si no hay scripts)."""
+    if not scripts:
+        return None
+    rx = re.compile(r'const\s+\w+:String\s*=\s*"([^"]*)"')
+    if os.path.isdir(scripts):
+        p = os.path.join(scripts, 'scripts', 'com', 'mcleodgaming', 'ssf2', 'api', 'SSF2Event.as')
+        if not os.path.isfile(p):
+            return None
+        return set(rx.findall(open(p, encoding='utf-8', errors='replace').read()))
+    z = zipfile.ZipFile(scripts)
+    for n in z.namelist():
+        if n.endswith('api/SSF2Event.as'):
+            return set(rx.findall(z.read(n).decode('utf8', 'replace')))
+    return None
+
+
+def fix_event_names(d, info, scripts, log):
+    """Cambia en el SSF2Event interno los valores de eventos que el motor no dispara.
+    Devuelve (bytes, cantidad)."""
+    a = info.abc
+    vals = engine_event_values(scripts)
+    mapping = {}
+    for old, new in EVENT_RENAMES.items():
+        if old not in a.str:
+            continue
+        if vals is not None and (old in vals or new not in vals):
+            continue                       # el motor si lo tiene (o no tiene el reemplazo)
+        mapping[old] = new
+    if not mapping:
+        return d, 0
+    d = rename_strings(d, mapping, None, info.code)
+    log('  Eventos de la API antigua adaptados al motor: %s' % ', '.join(
+        '%s -> %s' % kv for kv in sorted(mapping.items())))
+    return d, len(mapping)
 
 
 # ======================================================================
@@ -998,9 +1340,40 @@ def run(a, log):
         os.makedirs(os.path.dirname(dst), exist_ok=True)
         if os.path.isfile(dst) and not in_map:
             backup(dst)
-        if rmap and not in_map:
-            d0, comp0 = read_swf(a['character'])
-            info0 = analyze(d0)
+        d0, comp0 = read_swf(a['character'])
+        info0 = analyze(d0)
+        n_sec = patch_security(d0, info0, log) if not in_map else 0
+        n_api = 0
+        if ci['is_9b'] and not in_map and not a.get('no_api_patch'):
+            d0, n_api = patch_api_wrappers(d0, info0, log)
+            if n_api:
+                info0 = analyze(d0)
+            d0, n_get = add_api_getters(d0, info0, log)
+            if n_get:
+                info0 = analyze(d0)
+            n_sec += n_api + n_get
+        if ci['is_9b'] and not in_map and not a.get('no_api_patch'):
+            d0, n_ev = fix_event_names(d0, info0, a.get('scripts'), log)
+            if n_ev:
+                info0 = analyze(d0)
+            n_sec += n_ev
+        if a.get('scripts') and not in_map:
+            try:
+                gaps = engine_gaps(info0, symbol_names(d0), engine_identifiers(a['scripts']))
+            except Exception as e:
+                gaps = {}
+                log.warn('No pude comparar con el motor: %s' % e)
+            if gaps:
+                names = sorted(gaps)
+                log.warn('El personaje llama a %d funcion(es) que tu FMC no tiene: %s. Cada vez que su '
+                         'codigo las ejecute dara error y el ataque se quedara a medias. Hay que anadirlas al '
+                         'motor (Character.as) o anularlas.' % (len(names), ', '.join(names[:14])
+                                                                 + (' ...' if len(names) > 14 else '')))
+            else:
+                log('  API: el personaje no llama a ninguna funcion que falte en tu FMC.')
+        elif not a.get('scripts') and not in_map:
+            log('  (pasa tu scripts.zip para comprobar si llama a funciones que FMC no tiene)')
+        if (rmap or n_sec) and not in_map:
             n_sites = 0
             for ins in info0.code.values():
                 for off, op, v, ln in (ins or []):
@@ -1290,6 +1663,8 @@ def main():
     ap.add_argument('--info', help='descripcion del personaje')
     ap.add_argument('--txt-size', dest='txt_size', help='tamano de texto del selector (txtNumber)')
     ap.add_argument('--scripts', help='scripts.zip (o carpeta) de FMC: evita tocar nombres que usa el motor')
+    ap.add_argument('--no-api-patch', action='store_true', dest='no_api_patch',
+                    help='no tocar el SSF2API interno del archivo (por defecto se actualiza si es 9B)')
     ap.add_argument('--keep-names', action='store_true', dest='keep_names',
                     help='al cambiar el id, cambiar SOLO el id (no el resto de nombres que lo llevan)')
     ap.add_argument('--no-random', action='store_true', dest='no_random')
