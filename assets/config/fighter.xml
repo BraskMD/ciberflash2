@@ -56,6 +56,7 @@
 			costume_data = "assets/char_costume/sonic.as"
 		/>
 	</fighter>
+
 	
 	<fighter id = "soold" alternateID = "sonicxp" charName = "Sonic (0.9b)" cssName = "SONIC" txtNumber = "12">
 		<resource
@@ -157,7 +158,7 @@
 		/>
 	</fighter>
 	
-	<fighter id = "mecha" charName = "Mecha Sonic" cssName = "MECHA SONIC" txtNumber = "8" info = "By GreenGalaxio">
+	<fighter id = "mecha_sonic" charName = "Mecha Sonic" cssName = "MECHA SONIC" txtNumber = "8" info = "By GreenGalaxio">
 		<resource
 			portrait = "assets/char_portrait/mecha.png"
 			icon = "assets/char_icon/mecha_css.png"
@@ -169,6 +170,45 @@
 			portrait = "assets/char_portrait/selkadoom.png"
 			icon = "assets/char_icon/selkadoom_css.png"
 			fs_cutin = "assets/char_triangle/selkadoom_triangle.png"
+		/>
+	</fighter>
+
+	<fighter id = "gengar" charName = "Gengar" cssName = "GENGAR" txtNumber = "12" info = "By Jacker Mods">
+		<resource
+			portrait = "assets/char_portrait/gengar.png"
+			icon = "assets/char_icon/gengar_css.png"
+			fs_cutin = "assets/char_triangle/gengar_triangle.png"
+		/>
+	</fighter>
+
+<fighter id = "rosy" alternateID = "fleetwayamy" charName = "Amy" cssName = "AMY" txtNumber = "12">
+		<resource
+                        icon = "assets/char_icon/rosy_css.png"
+			costume_data = "assets/char_costume/rosy.as"
+		/>
+	</fighter>
+
+	<fighter id = "fleetwayamy" alternateID = "rosy" charName = "Fleetway Amy" cssName = "AMY" txtNumber = "12" info = "hola">
+		<resource
+			portrait = "assets/char_portrait/famy.png"
+			icon = "assets/char_icon/famy_css.png"
+			fs_cutin = "assets/char_triangle/famy_triangle.png"
+		/>
+	</fighter>
+
+	<fighter id = "emerl" charName = "Emerl" cssName = "EMERL" txtNumber = "12" info = "hola">
+		<resource
+			portrait = "assets/char_portrait/emerl.png"
+			icon = "assets/char_icon/emerl_css.png"
+			fs_cutin = "assets/char_triangle/emerl_triangle.png"
+		/>
+	</fighter>
+
+<fighter id = "cammy" charName = "Cammy" cssName = "CAMMY" txtNumber = "12" info = "hola">
+		<resource
+			portrait = "assets/char_portrait/cammy.png"
+			icon = "assets/char_icon/cammy_css.png"
+			fs_cutin = "assets/char_triangle/cammy_triangle.png"
 		/>
 	</fighter>
 	
