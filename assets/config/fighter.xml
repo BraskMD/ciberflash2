@@ -1018,4 +1018,7 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	<fighter id="zoro" alternateID="" charName="Zoro" cssName="ZORO" info="By Cháu Bác Hồ" txtNumber="12">
 		<resource portrait="assets/char_portrait/zoro.png" icon="assets/char_icon/zoro_css.png" fs_cutin="assets/char_triangle/zoro_triangle.png" costume_data=""/>
 	</fighter>
+	<fighter id="cristiano" alternateID="" charName="Cristiano Ronaldo" cssName="CR7" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/cristiano.png" icon="assets/char_icon/cristiano_css.png" fs_cutin="assets/char_triangle/cristiano_triangle.png" costume_data=""/>
+	</fighter>
 </fighter_config>
