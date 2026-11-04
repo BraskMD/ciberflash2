@@ -972,6 +972,14 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 />
 	</fighter>
 
+
+	<fighter id = "fang" charName = "Fang" cssName = "FANG" txtNumber = "12" info = "By Jhozo">
+		<resource
+		portrait = "assets/char_portrait/fang.png"
+			icon = "assets/char_icon/fang_css.png"
+			fs_cutin = "assets/char_triangle/fang_triangle.png"
+/>
+	</fighter>
 	
 	<fighter id = "hypergon" charName = "Hypergon" cssName = "HYPERGON" txtNumber = "10" info = "By Nicolas C">
 		<resource
@@ -992,8 +1000,7 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 
 	<fighter id = "dedede" alternateID = "kingdedede" charName = "King Dedede" cssName = "K. DEDEDE" txtNumber = "11" info = "1.4">
 		<resource
-			portrait = "assets/char_portrait/dedede_portrait.png"
-	                icon = "assets/char_icon/dedede_css.png"
+			portrait = "assets/char_portrait/dedede_portrait.png"	                icon = "assets/char_icon/dedede_css.png"
 			fs_cutin = "assets/char_triangle/dedede_triangle.png"
 			costume_data = "assets/char_costume/dedede.as"
 		/>
