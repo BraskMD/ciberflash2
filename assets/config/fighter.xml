@@ -501,6 +501,15 @@
 			costume_data = "assets/char_costume/vegetaps.as"
         />
     </fighter>
+
+	<fighter id = "littlemac" charName = "Little Mac" cssName = "MAC" txtNumber = "12" info = "By Smash Fan">
+		<resource
+			portrait = "assets/char_portrait/littlemac_portrait.png"
+			icon = "assets/char_icon/littlemac_css.png"
+			fs_cutin = "assets/char_triangle/littlemac_triangle.png"
+			costume_data = "assets/char_costume/littlemac.as"
+		/>
+	</fighter>
 	
 	<fighter id = "bills" charName = "Bills" cssName = "BILLS" txtNumber = "12" info = "By Metalový Šutrák">
 		<resource
