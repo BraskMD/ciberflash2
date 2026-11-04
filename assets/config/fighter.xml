@@ -620,7 +620,7 @@
 		/>
 	</fighter>
 	
-	<fighter id = "tien" charName = "Tien" cssName = "TIEN" txtNumber = "12" info = "By Geo, Brask & Kazu">
+	<fighter id = "tien" alternateID = "homelander" charName = "Tien" cssName = "TIEN" txtNumber = "12" info = "By Geo, Brask & Kazu">
 		<resource
 			portrait = "assets/char_portrait/tien.png"
 			icon = "assets/char_icon/tien_css.png"
@@ -1027,5 +1027,11 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	</fighter>
 	<fighter id="cristiano" alternateID="" charName="Cristiano Ronaldo" cssName="CR7" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/cristiano.png" icon="assets/char_icon/cristiano_css.png" fs_cutin="assets/char_triangle/cristiano_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="homelander" alternateID="tien" charName="homelander" cssName="homelander" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/homelander.png" icon="assets/char_icon/homelander_css.png" fs_cutin="" costume_data=""/>
+	</fighter>
+	<fighter id="bossbaby" alternateID="" charName="Boss Baby" cssName="BB" info="" txtNumber="14">
+		<resource portrait="assets/char_portrait/bossbaby.png" icon="assets/char_icon/bossbaby_css.png" fs_cutin="" costume_data=""/>
 	</fighter>
 </fighter_config>
