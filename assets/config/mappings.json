@@ -3213,6 +3213,15 @@
 			"name": "popple",
 	                "seriesIcon": null
 		},
+
+
+   "gokuxeno": {
+			"file": "gokuxeno.ssf",
+			"file_pub": "gokuxeno.ssf",
+			"guid": null,
+			"name": "Goku XENO",
+	                "seriesIcon": null
+		},
 		"tien": {
 			"file": "tien.ssf",
 			"file_pub": "tien.ssf",
@@ -3233,14 +3242,14 @@
 		"rows_1_name": "GAMES",
 		"rows_1": [
 			["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "donkeykong", "link", "zelda", "sheik", "ganondorf", "ness"],
-			["pikachu", "jigglypuff", "sceptile", "lucario", "bamelinrobo", "incineroar", "kirby", "metaknight", "kingdedede", "bandanadee", "fox", "falco", "krystal"],
+			["pikachu", "jigglypuff", "sceptile", "lucario", "bamelinrobo", "incineroar", "kirby", "metaknight", "dedede", "bandanadee", "fox", "falco", "krystal"],
 			["samus", "captainfalcon", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "simon", "bomberman", "blackmage", "cloud", "sora", "rayman"],
 			["sonic", "tails", "knuckles", "shadow", "silver", "mighty", "rosy", "blaze", "sally", "metalsonic", "mecha", "selkadoom", "nazo"]
 		],
 		"rows_2_name": "ANIME",
 		"rows_2": [
 
-			["goku", "vegeta", "piccolo", "gohan", "trunkz", "frieza", "cooler", "broly", "bardock", "zamasu", "bills", "jiren", "gogetassj4"],
+			["goku", "vegeta", "piccolo", "gohan", "trunkz", "frieza", "cooler", "broly", "bardock", "zamasu", "bills", "jiren", "gogetadbs"],
 			["luffy", "buggy", "enel", "naruto", "sakuke", "kakashi", "lee", "itachi", "ichigo", "uryu", "ogichi", "grimmjow", "ulquiorra"],
 			["jonathan", "joseph_joestar", "jotaro", "diojx", "josuke_higashikata", "kira", "yusuke", "jin", "gon", "saitama", "ppp", "deku", "baki"],
 			["rena", "hanyuu", "takano", "timou_kagerou", "timou_sakuya", "len", "saber", "gintoki", "inuyasha"]

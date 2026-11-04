@@ -207,7 +207,7 @@
 	<fighter id = "gogetadbs" alternateID = "gogetassj4" charName = "Gogeta (DBS)" cssName = "GOGETA" txtNumber = "12" info = "By VegitoMods">
 		<resource
 			portrait = "assets/char_portrait/gogeta.png"
-			icon = ""
+			icon = "assets/char_icon/gogetadbs_css.png"
 			fs_cutin = "assets/char_triangle/gogeta_triangle.png"
 		/>
 	</fighter>
@@ -450,10 +450,18 @@
 		/>
 	</fighter>
 	
-	<fighter id = "gokurevrev" alternateID = "blackgoku" charName = "Goku (Revamped)" cssName = "GOKU" txtNumber = "12" info = "By Richard Mohos">
+	<fighter id = "gokurevrev" alternateID = "gokuxeno" charName = "Goku (Revamped)" cssName = "GOKU" txtNumber = "12" info = "By Richard Mohos">
 		<resource
 			portrait = "assets/char_portrait/gokurevrev.png"
 			fs_cutin = "assets/char_triangle/gokurevrev_triangle.png"
+		/>
+	</fighter>
+
+	<fighter id = "gokuxeno" alternateID = "blackgoku" charName = "Goku XENO" cssName = "GOKU" txtNumber = "12" info = "goku senos">
+		<resource
+			portrait = "assets/char_portrait/gokuxeno.png"
+			fs_cutin = "assets/char_triangle/gokuxeno_triangle.png"
+                        icon = "assets/char_icon/gokuxeno_css.png"
 		/>
 	</fighter>
 	
