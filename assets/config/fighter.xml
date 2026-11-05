@@ -126,12 +126,16 @@
 		/>
 	</fighter>
 	
-	<fighter id = "knuckles" charName = "Knuckles" cssName = "KNUCKLES" txtNumber = "10">
+	<fighter id = "knuckles" alternateID = "knucklessf" charName = "Knuckles" cssName = "KNUCKLES" txtNumber = "10">
 		<resource 
 			icon = "assets/char_icon/knuckles_css.png"
 			costume_data = "assets/char_costume/knuckles.as"
 			fs_cutin = "assets/char_triangle/knuckles_triangle.png"
 		/>
+	</fighter>
+
+	<fighter id="knucklessf" alternateID="knuckles" charName="Knuckles" cssName="KNUCKLES" info="by Smash Fan" txtNumber="10">
+		<resource portrait="assets/char_portrait/knucklessf.png" icon="assets/char_icon/knucklessf_css.png" fs_cutin="" costume_data="assets/char_costume/knucklessf.as"/>
 	</fighter>
 	
 	<fighter id = "mighty" charName = "Mighty" cssName = "MIGHTY" txtNumber = "12" info = "By Jesus B">
@@ -481,13 +485,9 @@
 			costume_data = "assets/char_costume/vergilps.as"
 		/>
 	</fighter>
-	
-	<fighter id = "gokusf" alternateID = "gokurevrev" charName = "Goku (SF)" cssName = "GOKU" txtNumber = "12" info = "By Smash Fan\n Quirks:\n Warp Kamehameha: Full charged B + A = One and half bar\n Kaioken Assault: Side + B + A = One bar\n Spirit Bomb: Down + B + A = One bar\n God Kick: Air Down + A + B = Half bar\n Divine God Kick : Air Down + A + B  + Shield = One and half bar\n Vanish Attack: Up + B + A = Half bar\n Super Sayain 3 Attack: Down Throw + B + A = One and half bar\n Ultra Instinct: B+Taunt = Full Bar.">
-		<resource
-			portrait = "assets/char_portrait/gokusf.png"
-			fs_cutin = "assets/char_triangle/gokusf_triangle.png"
-			costume_data = "assets/char_costume/gokusf.as"
-		/>
+
+<fighter id="gokusf" alternateID="gokurevrev" charName="Goku" cssName="Goku" info="by Smash Fan" txtNumber="12">
+		<resource portrait="assets/char_portrait/gokusf.png" icon="assets/char_icon/gokusf_css.png" fs_cutin="" costume_data="assets/char_costume/gokusf.as"/>
 	</fighter>
 	
 	<fighter id = "gokurevrev" alternateID = "gokuxeno" charName = "Goku (Revamped)" cssName = "GOKU" txtNumber = "12" info = "By Richard Mohos">
@@ -1033,5 +1033,11 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	</fighter>
 	<fighter id="bossbaby" alternateID="" charName="Boss Baby" cssName="BB" info="" txtNumber="14">
 		<resource portrait="assets/char_portrait/bossbaby.png" icon="assets/char_icon/bossbaby_css.png" fs_cutin="" costume_data=""/>
+	</fighter>
+	<fighter id="banjokazooie" charName="Banjo &amp; Kazooie" cssName="BANJO &amp; KAZOOIE" info="" txtNumber="6">
+		<resource portrait="assets/char_portrait/banjokazooie.png" icon="assets/char_icon/banjokazooie_css.png" costume_data="assets/char_costume/banjokazooie.as"/>
+	</fighter>
+	<fighter id="hero" charName="Hero" cssName="HERO" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/hero.png" icon="assets/char_icon/hero_css.png" costume_data="assets/char_costume/hero.as"/>
 	</fighter>
 </fighter_config>
