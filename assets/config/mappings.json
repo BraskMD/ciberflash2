@@ -1032,6 +1032,12 @@
 	"character_xp": {},
 	"stage_xp": {},
 	"character": {
+		"shadowbeta": {
+			"file": "shadowbeta.ssf",
+			"file_pub": "shadowbeta.ssf",
+			"guid": "9b83d961-1b4d-4f98-97a0-ba8fd8c3c172",
+			"name": "Shadow"
+		},
 		"hero": {
 			"file": "hero.ssf",
 			"file_pub": "hero.ssf",
@@ -1448,6 +1454,13 @@
 		}
 	},
 	"stage": {
+		"fangstage": {
+			"guid": "54eed466-a684-4a1b-9f03-f35ba01180dd",
+			"file": "fangstage.ssf",
+			"file_pub": "fangstage.ssf",
+			"name": "Mirage Saloon Zone",
+			"creator": "Jhozo"
+		},
 		"bowserscastlenew": {
 			"guid": "4797c07d-f4f8-4f62-96d8-c6c9cdaf4aaa",
 			"file": "bowserscastlenew.ssf",
@@ -3335,7 +3348,7 @@
 			["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "donkeykong", "link", "zelda", "sheik", "ganondorf", "ness"],
 			["pikachu", "jigglypuff", "sceptile", "lucario", "bamelinrobo", "incineroar", "kirby", "metaknight", "dedede", "bandanadee", "fox", "falco", "krystal"],
 			["samus", "captainfalcon", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "simon", "bomberman", "blackmage", "cloud", "sora", "rayman"],
-			["sonic", "tails", "knucklessf", "shadow", "silver", "mighty", "rosy", "blaze", "sally", "metalsonic", "mecha_sonic", "selkadoom", "nazo"]
+			["sonic", "tails", "knucklessf", "shadowbeta", "silver", "mighty", "rosy", "blaze", "sally", "metalsonic", "mecha_sonic", "selkadoom", "nazo"]
 		],
 		"rows_2_name": "ANIME",
 		"rows_2": [
@@ -3355,7 +3368,8 @@
 		],
 		"rows_4_name": "BROKEN",
 		"rows_4": [
-			["gohanblanco", "evilgokutwo", "vegito", "chuck", "timou_ronald", "sanic", "uganknux", "tien", "zoro", "cristiano", "bossbaby", "banjokazooie", "hero"]
+			["gohanblanco", "evilgokutwo", "vegito", "chuck", "timou_ronald", "sanic", "uganknux", "tien", "zoro", "cristiano", "bossbaby", "banjokazooie", "hero"],
+			[""]
 		]
 	},
 	"stage_select_screen": {
@@ -3377,7 +3391,7 @@
 				["aetherhigh", "arkmaxim", "armsstage", "blizzardbuffalo", "burnedtower", "chunin", "citytrial", "cybersworld", "diehouse", "eoh", "explodatorium", "fortnitebus"],
 				["fancyshop", "gamer", "greengreen", "hongkong97", "innerworld", "jevilstage", "kingdicestage", "loungetown", "mariocircuit", "mmzerostage", "mutecity", "polus"],
 				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "afinfierno"],
-			["huecomundonew", "phase8new", "random"]
+			["huecomundonew", "phase8new", "fangstage", "random"]
 			]
 		}
 	},
@@ -3456,16 +3470,18 @@
 	},
 	"random_characters": {
 		"characters": ["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "donkeykong", "link", "zelda", "sheik", "ganondorf", "pikachu", "pichu", "jigglypuff", "lucario", "kirby", "metaknight", "bandanadee", "fox", "falco", "krystal", "samus", "zamus", "captainfalcon", "ness", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "sonic", "tails", "megaman", "ryu", "pacman", "lloyd", "simon", "bomberman", "blackmage", "sora", "rayman", "goku", "luffy", "naruto", "ichigo", "sandbag",
-			"blackgoku", "gohan_monksuke", "trunkz", "gohanblanco", "evilgoku", "zamasu", "broly", "frieza", "ichigogh", "ogichi", "grimmjow", "ulquiorra", "knucklessf",
+			"blackgoku", "gohan_monksuke", "trunkz", "gohanblanco", "evilgoku", "zamasu", "broly", "frieza", "ichigogh", "ogichi", "grimmjow", "ulquiorra",
 			"buggy", "enel", "moria", "kidnaruto", "ksasuke", "kakashi", "itachi", "joseph_joestar", "josuke_higashikata", "kira", "sansmetal", "doggotedd", "vergil",
 			"jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "saitama", "ppp", "oldma", "yusuke", "kyo", "fleetwayamyremastered",
 			"knuckles", "shadow", "silver", "sanic", "uganknux", "zeta", "chuck", "rena", "hanyuu", "takano", "knight", "kidbuu", "buu","nazo", "gengar", "emerl","cammy", "fang",
-			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "mewtwo", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom", "littlemac", "sonicxp", "sonicxp2", "zoro", "cristiano", "homelander", "bossbaby", "knucklessf", "gokusf", "banjokazooie", "hero"],
+			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "mewtwo", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom", "littlemac", "sonicxp", "sonicxp2", "zoro", "cristiano", "homelander", "bossbaby", "knucklessf", "gokusf", "banjokazooie", "hero", "shadowbeta"],
 		"classic_characters": ["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "shovel_knight", "donkeykong", "link", "zelda", "sheik", "ganondorf", "pikachu", "pichu", "jigglypuff", "lucario", "kirby", "metaknight", "bandanadee", "fox", "falco", "krystal", "samus", "zamus", "captainfalcon", "ness", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "sonic", "tails", "megaman", "ryu", "pacman", "lloyd", "simon", "bomberman", "blackmage", "sora", "rayman", "goku", "luffy", "naruto", "ichigo", "sandbag"]
 	},
 	"random_stages": {
 		"stages": ["battlefield", "finaldestination", "metalcavern", "tinystage", "galaxytours", "mushroomkingdom3", "yoshisisland", "emeraldcave", "warioware", "junglehijinx", "gangplankgalleon", "hylianskies", "clocktown", "pokemoncolosseum", "lakeofrage", "sandocean", "flatzoneplus", "rainbowroute", "butterbuilding", "meteovoyage", "palutenasshrine", "venuslighthouse", "crateria", "phase8", "saturnvalley", "devilsmachine", "desk", "casinonightzone", "skysanctuary", "chaosshrine", "lunarcore", "twilighttown", "skullfortress", "centralhighway", "pacmaze", "towerofsalvation", "bombfactory", "draculascastle", "steeldiver", "nintendo3ds", "huecomundo", "konohavillage", "finalvalley", "planetnamek", "worldtournament", "thousandsunny", "waitingroom", "kingdom1", "peachscastle", "kingdom2", "yoshisisland64", "yoshisstory", "hyrulecastle64", "hyruletemple", "saffroncity", "dreamland", "sectorz", "fourside", "castlesiege", "smashville", "greenhillzone", "theworldthatneverwas", "skypillar", "suzakucastle", "krazoapalace", "urbanchampion", "fairyglade",
-		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew"]
+		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew",
+
+"Stage", "fangstage"]
 	},
 	"match_results_screen": {
 		"show_losing_team": false,
