@@ -98,6 +98,10 @@
 			costume_data = ""
 		/>
 	</fighter>
+
+<fighter id="shadowbeta" alternateID="shadow" charName="Shadow" cssName="SHADOW" info="By Moonarch" txtNumber="12">
+		<resource portrait="assets/char_portrait/shadowbeta.png" icon="assets/char_icon/shadowbeta_css.png" fs_cutin="" costume_data="assets/char_costume/shadowbeta.as"/>
+	</fighter>
 	
 	<fighter id = "shadow" alternateID = "shadowv2" charName = "Shadow" cssName = "SHADOW" txtNumber = "11" info = "By Znx">
 		<resource
@@ -106,7 +110,7 @@
 		/>
 	</fighter>
 	
-	<fighter id = "shadowv2" alternateID = "shadow" charName = "Shadow (V2)" cssName = "SHADOW" info = "By Link-One">
+	<fighter id = "shadowv2" alternateID = "shadowbeta" charName = "Shadow (V2)" cssName = "SHADOW" info = "By Link-One">
 		<resource
 			portrait = "assets/char_portrait/shadowremastered.png"
 			fs_cutin = "assets/char_triangle/shadowremastered_triangle.png"
@@ -1040,4 +1044,5 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	<fighter id="hero" charName="Hero" cssName="HERO" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/hero.png" icon="assets/char_icon/hero_css.png" costume_data="assets/char_costume/hero.as"/>
 	</fighter>
+	
 </fighter_config>
