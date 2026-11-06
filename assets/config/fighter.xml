@@ -1045,4 +1045,13 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 		<resource portrait="assets/char_portrait/hero.png" icon="assets/char_icon/hero_css.png" costume_data="assets/char_costume/hero.as"/>
 	</fighter>
 	
+	<fighter id="freddyssj3" alternateID="" charName="Freddy SSJ3" cssName="Freddy SSJ3" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/freddyssj3.png" icon="assets/char_icon/freddyssj3_css.png" fs_cutin="assets/char_triangle/freddyssj3_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="GOTEN" alternateID="" charName="GOTEN" cssName="GOTEN" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/GOTEN.png" icon="assets/char_icon/GOTEN_css.png" fs_cutin="assets/char_triangle/GOTEN_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="gokubd3" alternateID="" charName="Goku DBZ All Forms" cssName="GOKU" info="KK SSJ1 SSJ2 SSJ3" txtNumber="12">
+		<resource portrait="assets/char_portrait/gokubd3.png" icon="assets/char_icon/gokubd3_css.png" fs_cutin="assets/char_triangle/gokubd3_triangle.png" costume_data=""/>
+	</fighter>
 </fighter_config>
