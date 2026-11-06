@@ -1,6 +1,10 @@
 ﻿<stages_config>	
 	
 	<!-- External Stage Assets -->
+	<stage id="triplebaka" previewURL="assets/stage_preview/triplebaka.png"/>
+	<stage id="tabuusresidence" previewURL="assets/stage_preview/tabuusresidence.png"/>
+	<stage id="GREATBAY" previewURL="assets/stage_preview/GREATBAY.png"/>
+	<stage id="apusevadelossimpson" previewURL="assets/stage_preview/apusevadelossimpson.png"/>
 	<stage id="fangstage" previewURL="assets/stage_preview/fangstage.png"/>
 	<stage id="bowserscastlenew" previewURL="assets/stage_preview/bowserscastlenew.png"/>
 	<stage id="phase8new" previewURL="assets/stage_preview/phase8new.png"/>

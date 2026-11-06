@@ -1454,6 +1454,35 @@
 		}
 	},
 	"stage": {
+		"triplebaka": {
+			"guid": "3b606484-4ed4-4be1-8a88-0d568cf001a2",
+			"file": "triplebaka.ssf",
+			"file_pub": "triplebaka.ssf",
+			"name": "Triple Baka",
+			"creator": "Gab"
+		},
+		"tabuusresidence": {
+			"guid": "a401458e-e7dc-451c-8199-8307bb7bf147",
+			"file": "tabuusresidence.ssf",
+			"file_pub": "tabuusresidence.ssf",
+			"name": "Tabuu's Residence",
+			"creator": "Nuru"
+		},
+		"GREATBAY": {
+			"guid": "358b3914-de3d-4d62-9982-e643d7a1da2b",
+			"file": "GREATBAY.ssf",
+			"file_pub": "GREATBAY.ssf",
+			"name": "Great Bay",
+			"creator": "Fario"
+		},
+		"apusevadelossimpson": {
+			"guid": "52ac1c0f-1b78-438d-b82c-a7bc701aed5b",
+			"file": "apusevadelossimpson.ssf",
+			"file_pub": "apusevadelossimpson.ssf",
+			"name": "Kwik-E-Mart",
+			"creator": "SSF2FANMODS"
+		},
+		
 		"fangstage": {
 			"guid": "54eed466-a684-4a1b-9f03-f35ba01180dd",
 			"file": "fangstage.ssf",
@@ -3391,7 +3420,7 @@
 				["aetherhigh", "arkmaxim", "armsstage", "blizzardbuffalo", "burnedtower", "chunin", "citytrial", "cybersworld", "diehouse", "eoh", "explodatorium", "fortnitebus"],
 				["fancyshop", "gamer", "greengreen", "hongkong97", "innerworld", "jevilstage", "kingdicestage", "loungetown", "mariocircuit", "mmzerostage", "mutecity", "polus"],
 				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "afinfierno"],
-			["huecomundonew", "phase8new", "fangstage", "random"]
+			["huecomundonew", "phase8new", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "random"]
 			]
 		}
 	},
@@ -3481,7 +3510,7 @@
 		"stages": ["battlefield", "finaldestination", "metalcavern", "tinystage", "galaxytours", "mushroomkingdom3", "yoshisisland", "emeraldcave", "warioware", "junglehijinx", "gangplankgalleon", "hylianskies", "clocktown", "pokemoncolosseum", "lakeofrage", "sandocean", "flatzoneplus", "rainbowroute", "butterbuilding", "meteovoyage", "palutenasshrine", "venuslighthouse", "crateria", "phase8", "saturnvalley", "devilsmachine", "desk", "casinonightzone", "skysanctuary", "chaosshrine", "lunarcore", "twilighttown", "skullfortress", "centralhighway", "pacmaze", "towerofsalvation", "bombfactory", "draculascastle", "steeldiver", "nintendo3ds", "huecomundo", "konohavillage", "finalvalley", "planetnamek", "worldtournament", "thousandsunny", "waitingroom", "kingdom1", "peachscastle", "kingdom2", "yoshisisland64", "yoshisstory", "hyrulecastle64", "hyruletemple", "saffroncity", "dreamland", "sectorz", "fourside", "castlesiege", "smashville", "greenhillzone", "theworldthatneverwas", "skypillar", "suzakucastle", "krazoapalace", "urbanchampion", "fairyglade",
 		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew",
 
-"Stage", "fangstage"]
+"Stage", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka"]
 	},
 	"match_results_screen": {
 		"show_losing_team": false,
