@@ -2422,20 +2422,20 @@
 	},
 	"character_9b": {
 		"mephilesxd": {
-			"file": "DAT47mephiles.ssf",
-			"file_pub": "DAT47mephiles.ssf",
+			"file": "mephiles.ssf",
+			"file_pub": "mephiles.ssf",
 			"guid": "1e5a40da-644e-40d9-8945-befbb3e7c92e",
 			"name": "Mephiles"
 		},
 		"gokubd3": {
-			"file": "DAT22.ssf",
-			"file_pub": "DAT22.ssf",
+			"file": "gokubd3.ssf",
+			"file_pub": "gokubd3.ssf",
 			"guid": "48567def-b34a-4a42-9c27-20da3bee64cc",
-			"name": "Goku DBZ All Forms"
+			"name": "Goku (All Forms)"
 		},
 		"GOTEN": {
-			"file": "DAT19.ssf",
-			"file_pub": "DAT19.ssf",
+			"file": "goten.ssf",
+			"file_pub": "goten.ssf",
 			"guid": "37d6de7a-b15b-482d-b0a9-c219ea43ab05",
 			"name": "GOTEN"
 		},
