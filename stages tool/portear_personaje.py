@@ -11,10 +11,10 @@ Que hace, en orden:
   4. Si das imagenes (portrait, icono, final smash, costumes), las copia a assets/ y
      anade el <fighter> en assets/config/fighter.xml usando las carpetas que ya usan
      los personajes de tu FMC.
-  5. Si el .ssf no trae su icono / imagen grande y no das las tuyas, pone las de
-     Vegeta (estan bien alineadas) para que el personaje cargue; cambialas despues.
-     Para usar otras por defecto, pon default_icon.png, default_portrait.png o
-     default_triangle.png junto a este script.
+  5. Si no das tu icono, pone uno azul liso por defecto (el icono se cambia despues).
+     Si no das tu portrait ni tu triangulo de final smash, pone los de Vegeta (estan
+     bien alineados) para que el personaje cargue. Para usar otras por defecto, pon
+     default_icon.png, default_portrait.png o default_triangle.png junto a este script.
 
 Hace copia de seguridad (.bak_fecha) de cada archivo de configuracion que modifica.
 No cambia nada DENTRO del .ssf del personaje (su id y sus clips no se tocan).
@@ -1442,8 +1442,7 @@ def run(a, log):
         res['portrait'] = dirs['portrait'] + FILE_PATTERN['portrait'] % char_id
     if a.get('icon') or a.get('portrait') or needs_icon:
         res['icon'] = dirs['icon'] + FILE_PATTERN['icon'] % char_id
-    if a.get('fs_cutin') or a.get('default_triangle'):
-        res['fs_cutin'] = dirs['fs_cutin'] + FILE_PATTERN['fs_cutin'] % char_id
+    res['fs_cutin'] = dirs['fs_cutin'] + FILE_PATTERN['fs_cutin'] % char_id
     if a.get('costume'):
         res['costume_data'] = dirs['costume_data'] + os.path.basename(a['costume'])
     if any(f['id'] == char_id for f in parse_fighters(ftext)):
@@ -1473,7 +1472,7 @@ def run(a, log):
                     save_default_if_missing('icon', out, log)
             log('  Imagen icon: %s%s' % (res['icon'], '' if a.get('icon') else (
                 '  (generada a partir del portrait)' if a.get('portrait') else
-                '  (imagen por defecto de Vegeta: cambiala por la tuya)')))
+                '  (icono por defecto azul: cambialo por el tuyo)')))
         if 'fs_cutin' in res:
             out = os.path.join(game, *res['fs_cutin'].split('/'))
             if not dry:
@@ -1597,18 +1596,14 @@ def gui():
     field('scripts.zip de FMC (opcional):', 'scripts', 'zip')
     field('Pagina del selector (vacio = ultima):', 'page', None)
     field('Portrait 560x246 (vacio = el de Vegeta):', 'portrait', 'img')
-    field('Icono 172x160 (vacio = el de Vegeta):', 'icon', 'img')
-    field('Triangulo de final smash (opcional):', 'fs_cutin', 'img')
+    field('Icono 172x160 (vacio = el azul por defecto):', 'icon', 'img')
+    field('Triangulo final smash 491x132 (vacio = el de Vegeta):', 'fs_cutin', 'img')
     field('Archivo de costumes (opcional):', 'costume', 'json')
     field('Texto del selector (opcional):', 'css_name', None)
     field('Descripcion (opcional):', 'info', None)
     dry = tk.IntVar()
     norand = tk.IntVar()
-    deftri = tk.IntVar()
     tk.Checkbutton(root, text='No anadir a los personajes aleatorios', variable=norand).grid(row=row[0], column=1, sticky='w')
-    row[0] += 1
-    tk.Checkbutton(root, text='Final smash: usar el triangulo de Vegeta si no pongo imagen',
-                   variable=deftri).grid(row=row[0], column=1, sticky='w')
     row[0] += 1
     tk.Checkbutton(root, text='Solo simular (no escribe nada)', variable=dry).grid(row=row[0], column=1, sticky='w')
     row[0] += 1
@@ -1621,7 +1616,6 @@ def gui():
         args['section'] = section.get()
         args['dry'] = bool(dry.get())
         args['no_random'] = bool(norand.get())
-        args['default_triangle'] = bool(deftri.get())
         args['rename_all'] = bool(renall.get())
         try:
             args['page'] = int(args['page']) if args['page'] else None
@@ -1657,7 +1651,7 @@ def main():
     ap.add_argument('--icon', help='icono del selector (se recorta a 172x160)')
     ap.add_argument('--fs-cutin', dest='fs_cutin', help='imagen del final smash')
     ap.add_argument('--default-triangle', action='store_true', dest='default_triangle',
-                    help='poner el triangulo de final smash de Vegeta si no das --fs-cutin')
+                    help=argparse.SUPPRESS)  # ya no hace falta: sin --fs-cutin siempre se pone el de Vegeta
     ap.add_argument('--costume', help='archivo de costumes (JSON) para assets/char_costume')
     ap.add_argument('--css-name', dest='css_name', help='texto bajo el icono del selector')
     ap.add_argument('--info', help='descripcion del personaje')
@@ -1680,43 +1674,32 @@ def main():
         sys.exit(1)
 
 
-# Imagenes por defecto (las de Vegeta): icono 172x160, portrait 560x246, triangulo 491x132.
+# Imagenes por defecto: icono 172x160 (azul liso OPNormal), portrait 560x246 y triangulo 491x132 (las de Vegeta).
 _DEFAULTS_B64 = {
     'icon': (
-        'iVBORw0KGgoAAAANSUhEUgAAAKwAAACgCAMAAACmLXeRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA/UExURXCc/wAA'
-        'AAcHBxkABkQMFPnMp9SMXJtcNDUfHjktL6qqqtfX1/j4+AAAFkQ3EwAAMoFoI72nShEXcjlB0AAAAOoeEMMAAAAVdFJOU///////'
-        '////////////////////ACvZfeoAAAAJcEhZcwAAEOUAABDlAfQdpIIAAAAYdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCA1LjEuMvu8'
-        'A7YAAAC2ZVhJZklJKgAIAAAABQAaAQUAAQAAAEoAAAAbAQUAAQAAAFIAAAAoAQMAAQAAAAIAAAAxAQIAEAAAAFoAAABphwQAAQAA'
-        'AGoAAAAAAAAAOK0BAOgDAAA4rQEA6AMAAFBhaW50Lk5FVCA1LjEuMgADAACQBwAEAAAAMDIzMAGgAwABAAAAAQAAAAWgBAABAAAA'
-        'lAAAAAAAAAACAAEAAgAEAAAAUjk4AAIABwAEAAAAMDEwMAAAAACFrN4XYnCjEQAACDhJREFUeF7tlmuXFNcNAA2bgIkdwJj//1tT'
-        'V6XWaPoxOzv0+ITDrQ+NpKtH7Z51Tn67wbt3796/f8+30peXl38t+NQrQAo1yDcfFupVdnuse/Ru6mbFuS2os5kH4fpCEXglzocF'
-        'Kk7JjR4d7satzhnntqDOZh5QhKExZY9wjftMiXNbUGczDyjW1OpJakpI86Fhjxr3QXudNSXObUGdzTygWFOrJ6kpIc2Hhj1q3Aft'
-        'ddaUOLcFdTbzgGJNrZ6kpoQ0Hxr2qHEftI+7y2XT3BbUU6+Pgb16QZGn4Rnc6EmPu/AasJLYNLcF9dTrY2DK3oZ251hJDKvFpLCq'
-        'E9vPN0uNmLiSzYdrakmqvA69fQ6IXSbj7pT9cdnt4jicl7PU+gmy1IiJi+xuD1B3Saq8Dr19jq+binF3yr5VthRqzrQz7i6vWYri'
-        'brM4YsPtHl5pS5uFA/k6WHPb3X1rlqbshR+QBRfzWqnNBFZWRPuDsqRT9v9Ztp6IjzrFfnsIsnqNPR5Nm8Vnyj5VtpeFistqznTF'
-        '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'
+        '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'
+        'Gorc3PwGZw4UJxQ+Cc4AAAAASUVORK5CYII='
     ),
     'portrait': (
         'iVBORw0KGgoAAAANSUhEUgAAAjAAAAD2CAMAAAD/AU3dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABUUExURQAAAAcH'
