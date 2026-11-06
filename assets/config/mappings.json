@@ -1454,6 +1454,75 @@
 		}
 	},
 	"stage": {
+		"multigrain": {
+			"guid": "6a67b460-6303-4383-95fd-77b5ddebbbe7",
+			"file": "multigrain.ssf",
+			"file_pub": "multigrain.ssf",
+			"name": "Multigrain Fields",
+			"creator": "Thunder Mods"
+		},
+		"waterfallut": {
+			"guid": "82bfbd77-62ae-4029-84df-6b86c5164b98",
+			"file": "waterfallut.ssf",
+			"file_pub": "waterfallut.ssf",
+			"name": "Undertale Waterfall",
+			"creator": "Eden"
+		},
+		"olympus": {
+			"guid": "9d036cec-df1f-47cd-8f95-6dd18107f1e6",
+			"file": "olympus.ssf",
+			"file_pub": "olympus.ssf",
+			"name": "Olympus Coliseum",
+			"creator": "Brandom"
+		},
+		"itsoverisntstage": {
+			"guid": "itsoverisntstagessf2",
+			"file": "itsoverisntstage.ssf",
+			"file_pub": "itsoverisntstage.ssf",
+			"name": "It's over, isn't it? Stage",
+			"creator": "Gab"
+		},
+		"lapislazulitower": {
+			"guid": "lapislazulitowerssf2",
+			"file": "lapislazulitower.ssf",
+			"file_pub": "lapislazulitower.ssf",
+			"name": "Lapis Lazuli's Tower",
+			"creator": "Gab"
+		},
+		"DBM": {
+			"guid": "5343b1bf-ad19-4931-abf0-70c78f25da25",
+			"file": "DBM.ssf",
+			"file_pub": "DBM.ssf",
+			"name": "Dragon Ball Multiverse Stage",
+			"creator": "Eli-Maf"
+		},
+		"lordzed": {
+			"guid": "ea9e4999-4b83-4960-b613-7af922808c43",
+			"file": "lordzed.ssf",
+			"file_pub": "lordzed.ssf",
+			"name": "Lord Zedd Stage",
+			"creator": "Jacker Mods"
+		},
+		"dragonmogolico": {
+			"guid": "293be887-df84-4e07-a3f6-46b1afb520c0",
+			"file": "dragonmogolico.ssf",
+			"file_pub": "dragonmogolico.ssf",
+			"name": "Dragon's Nest",
+			"creator": "Jacker Mods"
+		},
+		"ShibuyaTerminal": {
+			"guid": "990ec9cf-053a-432f-83e4-a90ace95c466",
+			"file": "ShibuyaTerminal.ssf",
+			"file_pub": "ShibuyaTerminal.ssf",
+			"name": "Shibuya Terminal"
+		},
+		"phill": {
+			"guid": "33504c6c-08af-4ad9-8778-485f4f8d6fd3",
+			"file": "phill.ssf",
+			"file_pub": "phill.ssf",
+			"name": "Pumpkin Hill",
+			"creator": "YT120 Loquendo"
+		},
 		"triplebaka": {
 			"guid": "3b606484-4ed4-4be1-8a88-0d568cf001a2",
 			"file": "triplebaka.ssf",
@@ -3420,7 +3489,8 @@
 				["aetherhigh", "arkmaxim", "armsstage", "blizzardbuffalo", "burnedtower", "chunin", "citytrial", "cybersworld", "diehouse", "eoh", "explodatorium", "fortnitebus"],
 				["fancyshop", "gamer", "greengreen", "hongkong97", "innerworld", "jevilstage", "kingdicestage", "loungetown", "mariocircuit", "mmzerostage", "mutecity", "polus"],
 				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "afinfierno"],
-			["huecomundonew", "phase8new", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "random"]
+			["huecomundonew", "phase8new", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed"],
+			["DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "random"]
 			]
 		}
 	},
@@ -3510,7 +3580,7 @@
 		"stages": ["battlefield", "finaldestination", "metalcavern", "tinystage", "galaxytours", "mushroomkingdom3", "yoshisisland", "emeraldcave", "warioware", "junglehijinx", "gangplankgalleon", "hylianskies", "clocktown", "pokemoncolosseum", "lakeofrage", "sandocean", "flatzoneplus", "rainbowroute", "butterbuilding", "meteovoyage", "palutenasshrine", "venuslighthouse", "crateria", "phase8", "saturnvalley", "devilsmachine", "desk", "casinonightzone", "skysanctuary", "chaosshrine", "lunarcore", "twilighttown", "skullfortress", "centralhighway", "pacmaze", "towerofsalvation", "bombfactory", "draculascastle", "steeldiver", "nintendo3ds", "huecomundo", "konohavillage", "finalvalley", "planetnamek", "worldtournament", "thousandsunny", "waitingroom", "kingdom1", "peachscastle", "kingdom2", "yoshisisland64", "yoshisstory", "hyrulecastle64", "hyruletemple", "saffroncity", "dreamland", "sectorz", "fourside", "castlesiege", "smashville", "greenhillzone", "theworldthatneverwas", "skypillar", "suzakucastle", "krazoapalace", "urbanchampion", "fairyglade",
 		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew",
 
-"Stage", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka"]
+"Stage", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed", "DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain"]
 	},
 	"match_results_screen": {
 		"show_losing_team": false,

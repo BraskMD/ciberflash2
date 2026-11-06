@@ -1,6 +1,16 @@
 ﻿<stages_config>	
 	
 	<!-- External Stage Assets -->
+	<stage id="multigrain" previewURL="assets/stage_preview/multigrain.png"/>
+	<stage id="waterfallut" previewURL="assets/stage_preview/waterfallut.png"/>
+	<stage id="olympus" previewURL="assets/stage_preview/olympus.png"/>
+	<stage id="itsoverisntstage" previewURL="assets/stage_preview/itsoverisntstage.png"/>
+	<stage id="lapislazulitower" previewURL="assets/stage_preview/lapislazulitower.png"/>
+	<stage id="DBM" previewURL="assets/stage_preview/DBM.png"/>
+	<stage id="lordzed" previewURL="assets/stage_preview/lordzed.png"/>
+	<stage id="dragonmogolico" previewURL="assets/stage_preview/dragonmogolico.png"/>
+	<stage id="ShibuyaTerminal" previewURL="assets/stage_preview/ShibuyaTerminal.png"/>
+	<stage id="phill" previewURL="assets/stage_preview/phill.png"/>
 	<stage id="triplebaka" previewURL="assets/stage_preview/triplebaka.png"/>
 	<stage id="tabuusresidence" previewURL="assets/stage_preview/tabuusresidence.png"/>
 	<stage id="GREATBAY" previewURL="assets/stage_preview/GREATBAY.png"/>
