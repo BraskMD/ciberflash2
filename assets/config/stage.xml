@@ -1,6 +1,15 @@
 ﻿<stages_config>	
 	
 	<!-- External Stage Assets -->
+	<stage id="hyrulecastle64" previewURL="assets/stage_preview/hyrulecastle64.png"/>
+	<stage id="hylianskies" previewURL="assets/stage_preview/hylianskies.png"/>
+	<stage id="finalvalley" previewURL="assets/stage_preview/finalvalley.png"/>
+	<stage id="emeraldcave" previewURL="assets/stage_preview/emeraldcave.png"/>
+	<stage id="draculascastle" previewURL="assets/stage_preview/draculascastle.png"/>
+	<stage id="clocktown" previewURL="assets/stage_preview/clocktown.png"/>
+	<stage id="castlesiege" previewURL="assets/stage_preview/castlesiege.png"/>
+	<stage id="bombfactory" previewURL="assets/stage_preview/bombfactory.png"/>
+	<stage id="hyruletemple" previewURL="assets/stage_preview/hyruletemple.png"/>
 	<stage id="multigrain" previewURL="assets/stage_preview/multigrain.png"/>
 	<stage id="waterfallut" previewURL="assets/stage_preview/waterfallut.png"/>
 	<stage id="olympus" previewURL="assets/stage_preview/olympus.png"/>
@@ -25,6 +34,6 @@
 	<stage id="heaven" previewURL="assets/stage_preview/heaven.png"/>
 	<stage id="deck" previewURL="assets/stage_preview/deck.png"/>
 	<stage id="palaceoftwilight" previewURL="assets/stage_preview/palaceoftwilight.png"/>
-	<stage id="snowpointtemple" previewURL="assets/stage_preview/snowpointtemple.png"/>
+	<stage id="snowpointtemple" previewURL="assets/stage_preview/snowpointtemple.png" seriesIcon="zeldaicon"/>
 	
 </stages_config>
