@@ -1,6 +1,11 @@
 ﻿<stages_config>	
 	
 	<!-- External Stage Assets -->
+	<stage id="planetnameknew" previewURL="assets/stage_preview/planetnameknew.png"/>
+	<stage id="planetnamek" previewURL="assets/stage_preview/planetnamek.png"/>
+	<stage id="metalcavern" previewURL="assets/stage_preview/metalcavern.png"/>
+	<stage id="konohavillage" previewURL="assets/stage_preview/konohavillage.png"/>
+	<stage id="kingdom2" previewURL="assets/stage_preview/kingdom2.png"/>
 	<stage id="hyrulecastle64" previewURL="assets/stage_preview/hyrulecastle64.png"/>
 	<stage id="hylianskies" previewURL="assets/stage_preview/hylianskies.png"/>
 	<stage id="finalvalley" previewURL="assets/stage_preview/finalvalley.png"/>
