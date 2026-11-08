@@ -1057,4 +1057,7 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	<fighter id="mephilesxd" alternateID="" charName="Mephiles" cssName="MEPHILES" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/mephilesxd.png" icon="assets/char_icon/mephilesxd_css.png" fs_cutin="assets/char_triangle/mephilesxd_triangle.png" costume_data=""/>
 	</fighter>
+	<fighter id="gokumuiputo" alternateID="" charName="Goku MUI" cssName="GOKU MUI" info="By reva" txtNumber="12">
+		<resource portrait="assets/char_portrait/gokumuiputo.png" icon="assets/char_icon/gokumuiputo_css.png" fs_cutin="assets/char_triangle/gokumuiputo_triangle.png" costume_data=""/>
+	</fighter>
 </fighter_config>
