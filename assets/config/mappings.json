@@ -1,5 +1,10 @@
 {
 	"music": {
+		"bgm_templeultimate": {
+			"guid": "72b2e2b7-9093-4de6-843e-31b27283c3e9",
+			"file": "bgm_templeultimate.ssf",
+			"file_pub": "bgm_templeultimate.ssf"
+		},
 		"bgm_hyrulecastleinterior": {
 			"guid": "2c0b825d-a494-4e74-8c43-8ab9596655fd",
 			"file": "bgm_hyrulecastleinterior.ssf",
