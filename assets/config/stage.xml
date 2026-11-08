@@ -1,8 +1,13 @@
 ﻿<stages_config>	
 	
 	<!-- External Stage Assets -->
+	<stage id="yoshisstory" previewURL="assets/stage_preview/yoshisstory.png"/>
+	<stage id="yoshisisland" previewURL="assets/stage_preview/yoshisisland.png"/>
+	<stage id="twilighttownnew" previewURL="assets/stage_preview/twilighttownnew.png"/>
+	<stage id="smashville" previewURL="assets/stage_preview/smashville.png"/>
+	<stage id="skysanctuary" previewURL="assets/stage_preview/skysanctuary.png"/>
+	<stage id="sectorz" previewURL="assets/stage_preview/sectorz.png"/>
 	<stage id="planetnameknew" previewURL="assets/stage_preview/planetnameknew.png"/>
-	<stage id="planetnamek" previewURL="assets/stage_preview/planetnamek.png"/>
 	<stage id="metalcavern" previewURL="assets/stage_preview/metalcavern.png"/>
 	<stage id="konohavillage" previewURL="assets/stage_preview/konohavillage.png"/>
 	<stage id="kingdom2" previewURL="assets/stage_preview/kingdom2.png"/>

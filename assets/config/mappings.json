@@ -1,5 +1,35 @@
 {
 	"music": {
+		"bgm_yoshiunderground": {
+			"guid": "7b8be526-4783-4a91-91e6-40c2ac180e56",
+			"file": "bgm_yoshiunderground.ssf",
+			"file_pub": "bgm_yoshiunderground.ssf"
+		},
+		"bgm_sinistersundownworkingtogether": {
+			"guid": "1345fd3e-5e24-4dfd-a21a-cd6081830346",
+			"file": "bgm_sinistersundownworkingtogether.ssf",
+			"file_pub": "bgm_sinistersundownworkingtogether.ssf"
+		},
+		"bgm_dearlybeloved": {
+			"guid": "75bf763f-be52-42a7-9901-01c3c7c90f15",
+			"file": "bgm_dearlybeloved.ssf",
+			"file_pub": "bgm_dearlybeloved.ssf"
+		},
+		"bgm_guilestheme": {
+			"guid": "b5692b7e-0836-4962-97ac-49a46b2d0385",
+			"file": "bgm_guilestheme.ssf",
+			"file_pub": "bgm_guilestheme.ssf"
+		},
+		"bgm_NewAgeRetroHippie": {
+			"guid": "600a528b-c980-4133-9002-f0d69629fd66",
+			"file": "bgm_NewAgeRetroHippie.ssf",
+			"file_pub": "bgm_NewAgeRetroHippie.ssf"
+		},
+		"bgm_tripledeluxemedley": {
+			"guid": "d0e76317-505e-4947-ad4f-bc42d7a8c300",
+			"file": "bgm_tripledeluxemedley.ssf",
+			"file_pub": "bgm_tripledeluxemedley.ssf"
+		},
 		"bgm_dbzbudokainamek": {
 			"guid": "2328c7ee-55c2-469c-9672-2861059e663e",
 			"file": "bgm_dbzbudokainamek.ssf",
@@ -1504,6 +1534,96 @@
 		}
 	},
 	"stage": {
+		"yoshisstory": {
+			"guid": "78ec5f26-dcf3-4699-beaf-68f43f4e5c37",
+			"file": "yoshisstory.ssf",
+			"file_pub": "yoshisstory.ssf",
+			"name": "Yoshi's Story"
+		},
+		"yoshisisland": {
+			"guid": "9fc1f800-5aae-45f4-8979-9f605a86d2af",
+			"file": "yoshisisland.ssf",
+			"file_pub": "yoshisisland.ssf",
+			"name": "Yoshi's Island"
+		},
+		"worldtournament": {
+			"guid": "a62a70eb-1db2-4eb8-832c-6a6550f1e52f",
+			"file": "worldtournament.ssf",
+			"file_pub": "worldtournament.ssf",
+			"name": "World Tournament"
+		},
+		"waitingroom": {
+			"guid": "9a13e61a-bf28-4396-9d37-ac8a97c3a03b",
+			"file": "waitingroom.ssf",
+			"file_pub": "waitingroom.ssf",
+			"name": "Waiting Room"
+		},
+		"twilighttownnew": {
+			"guid": "82aa995e-513c-4f85-a172-850f49b171f5",
+			"file": "twilighttownnew.ssf",
+			"file_pub": "twilighttownnew.ssf",
+			"name": "Twilight Town"
+		},
+		"thousandsunny": {
+			"guid": "42b4fd02-9624-4c47-8b37-2f576cc4c048",
+			"file": "thousandsunny.ssf",
+			"file_pub": "thousandsunny.ssf",
+			"name": "Thousand Sunny"
+		},
+		"theworldthatneverwas": {
+			"guid": "f5bc405e-74e6-4358-89fa-84f6a7e86acf",
+			"file": "theworldthatneverwas.ssf",
+			"file_pub": "theworldthatneverwas.ssf",
+			"name": "The World That Never Was"
+		},
+		"suzakucastle": {
+			"guid": "62d85510-e68f-44e3-9a8f-63304d01e55e",
+			"file": "suzakucastle.ssf",
+			"file_pub": "suzakucastle.ssf",
+			"name": "Suzaku Castle"
+		},
+		"smashville": {
+			"guid": "2974ce3a-44de-415f-bc8d-d434f6fe0da2",
+			"file": "smashville.ssf",
+			"file_pub": "smashville.ssf",
+			"name": "Smashville"
+		},
+		"skysanctuary": {
+			"guid": "85462325-8e72-46fb-9807-93c165d2643c",
+			"file": "skysanctuary.ssf",
+			"file_pub": "skysanctuary.ssf",
+			"name": "Sky Sanctuary Zone"
+		},
+		"skypillar": {
+			"guid": "a24b67a4-f69f-48ba-b8d8-8d2d1b0a4fb5",
+			"file": "skypillar.ssf",
+			"file_pub": "skypillar.ssf",
+			"name": "Sky Pillar"
+		},
+		"sectorz": {
+			"guid": "84272dba-a44c-4d4b-abe5-0a036419bdc7",
+			"file": "sectorz.ssf",
+			"file_pub": "sectorz.ssf",
+			"name": "Sector Z"
+		},
+		"saturnvalley": {
+			"guid": "e16b7535-9a52-4426-bf49-92470e6eade8",
+			"file": "saturnvalley.ssf",
+			"file_pub": "saturnvalley.ssf",
+			"name": "Saturn Valley"
+		},
+		"rainbowroute": {
+			"guid": "c02c1532-40ba-4e2a-8a7a-3dad26f05b87",
+			"file": "rainbowroute.ssf",
+			"file_pub": "rainbowroute.ssf",
+			"name": "Rainbow Route"
+		},
+		"pokemoncolosseum": {
+			"guid": "52372260-aa56-4f81-91d1-9125503d30b5",
+			"file": "pokemoncolosseum.ssf",
+			"file_pub": "pokemoncolosseum.ssf",
+			"name": "Pokémon Colosseum"
+		},
 		"planetnameknew": {
 			"guid": "37b1de64-72d7-41cf-8cc9-0c2e191016ea",
 			"file": "planetnameknew.ssf",
@@ -1753,12 +1873,6 @@
 			"file_pub": "palaceoftwilight.ssf",
 			"name": "Palace Of Twilight"
 		},
-		"yoshisstory": {
-			"guid": "78ec5f26-dcf3-4699-beaf-68f43f4e5c37",
-			"file": "yoshisstory.ssf",
-			"file_pub": "DAT176.ssf",
-			"name": "Yoshi's Story"
-		},
 		"targettest_yoshi": {
 			"guid": "a1d7f6d5-c02f-4247-a2bf-ff06020b3dc3",
 			"file": "targettest_yoshi.ssf",
@@ -1807,12 +1921,6 @@
 		},
 		"locked3": {},
 		"locked1": {},
-		"worldtournament": {
-			"guid": "a62a70eb-1db2-4eb8-832c-6a6550f1e52f",
-			"file": "worldtournament.ssf",
-			"file_pub": "DAT126.ssf",
-			"name": "World Tournament"
-		},
 		"crystalsmash": {
 			"guid": "194a4972-6e45-49f3-969e-50b2ee3c84d4",
 			"file": "crystalsmash.ssf",
@@ -1836,12 +1944,6 @@
 			"file_pub": "DAT255.ssf",
 			"name": "Lunar Core"
 		},
-		"smashville": {
-			"guid": "2974ce3a-44de-415f-bc8d-d434f6fe0da2",
-			"file": "smashville.ssf",
-			"file_pub": "DAT183.ssf",
-			"name": "Smashville"
-		},
 		"targettest_bowser": {
 			"guid": "21621cef-9dca-43eb-8cbf-edb2eb80912d",
 			"file": "targettest_bowser.ssf",
@@ -1858,12 +1960,6 @@
 			"file": "clocktown.ssf",
 			"file_pub": "DAT252.ssf",
 			"name": "Clock Town"
-		},
-		"suzakucastle": {
-			"guid": "62d85510-e68f-44e3-9a8f-63304d01e55e",
-			"file": "suzakucastle.ssf",
-			"file_pub": "DAT306.ssf",
-			"name": "Suzaku Castle"
 		},
 		"homeruncontest": {
 			"guid": "83faeedf-fa53-4b96-95d2-880a0486c00a",
@@ -1903,12 +1999,6 @@
 			"file": "targettest_bomberman.ssf",
 			"file_pub": "DAT259.ssf"
 		},
-		"rainbowroute": {
-			"guid": "c02c1532-40ba-4e2a-8a7a-3dad26f05b87",
-			"file": "rainbowroute.ssf",
-			"file_pub": "DAT27.ssf",
-			"name": "Rainbow Route"
-		},
 		"crystalsmash2": {
 			"guid": "bf12a1e6-03b8-4818-9802-6b54b1c816fe",
 			"file": "crystalsmash2.ssf",
@@ -1931,12 +2021,6 @@
 			"guid": "be3320f1-201f-4b15-9d18-4e0092653fcc",
 			"file": "targettest3.ssf",
 			"file_pub": "DAT304.ssf"
-		},
-		"thousandsunny": {
-			"guid": "42b4fd02-9624-4c47-8b37-2f576cc4c048",
-			"file": "thousandsunny.ssf",
-			"file_pub": "DAT216.ssf",
-			"name": "Thousand Sunny"
 		},
 		"chaosshrine": {
 			"guid": "9669b85c-fa35-443a-8cf9-7cddb9bf8e52",
@@ -1976,7 +2060,7 @@
 			"guid": "d44a06b9-57b5-4984-83f0-b102591277a5",
 			"file": "yoshisisland64.ssf",
 			"file_pub": "DAT88.ssf",
-			"name": "Yoshi's Island"
+			"name": "Super Happy Tree"
 		},
 		"sandbagsoccer": {
 			"guid": "2f707e4f-dd5c-41db-86be-323a134c78bd",
@@ -1995,35 +2079,17 @@
 			"name": "Battlefield",
 			"alternate_id":["peachscastle"]
 		},
-		"theworldthatneverwas": {
-			"guid": "f5bc405e-74e6-4358-89fa-84f6a7e86acf",
-			"file": "theworldthatneverwas.ssf",
-			"file_pub": "DAT278.ssf",
-			"name": "The World That Never Was"
-		},
 		"finaldestination": {
 			"guid": "1fd1576f-0b77-4c6f-9a7d-3fe6ac0e6ce0",
 			"file": "finaldestination.ssf",
 			"file_pub": "DAT250.ssf",
 			"name": "Final Destination"
 		},
-		"skysanctuary": {
-			"guid": "85462325-8e72-46fb-9807-93c165d2643c",
-			"file": "skysanctuary.ssf",
-			"file_pub": "DAT23.ssf",
-			"name": "Sky Sanctuary Zone"
-		},
 		"gangplankgalleon": {
 			"guid": "b9c338ce-f61a-466d-a9e3-5c6dba0777db",
 			"file": "gangplankgalleon.ssf",
 			"file_pub": "DAT36.ssf",
 			"name": "Gangplank Galleon"
-		},
-		"skypillar": {
-			"guid": "a24b67a4-f69f-48ba-b8d8-8d2d1b0a4fb5",
-			"file": "skypillar.ssf",
-			"file_pub": "DAT268.ssf",
-			"name": "Sky Pillar"
 		},
 		"warioware": {
 			"guid": "f0f9a82a-531b-46e8-9ce0-03a58042629f",
@@ -2062,18 +2128,12 @@
 			"guid": "56f42162-cd47-43d8-be56-8265fc2d0c86",
 			"file": "twilighttown.ssf",
 			"file_pub": "DAT97.ssf",
-			"name": "Twilight Town"
+			"name": "Twilight Town (OLD)"
 		},
 		"targettest_bandanadee": {
 			"guid": "36704879-5665-46c9-ab1d-36a33498aa89",
 			"file": "targettest_bandanadee.ssf",
 			"file_pub": "DAT177.ssf"
-		},
-		"pokemoncolosseum": {
-			"guid": "52372260-aa56-4f81-91d1-9125503d30b5",
-			"file": "pokemoncolosseum.ssf",
-			"file_pub": "DAT52.ssf",
-			"name": "Pok�mon Colosseum"
 		},
 		"fourside": {
 			"guid": "c970d1df-a3d6-4de7-b761-a90bd60215ca",
@@ -2108,12 +2168,6 @@
 			"file": "tourian.ssf",
 			"file_pub": "DAT91.ssf"
 		},
-		"waitingroom": {
-			"guid": "9a13e61a-bf28-4396-9d37-ac8a97c3a03b",
-			"file": "waitingroom.ssf",
-			"file_pub": "DAT56.ssf",
-			"name": "Waiting Room"
-		},
 		"saffroncity": {
 			"guid": "ee7ff71f-23c7-44e2-aa0a-b77b84654adc",
 			"file": "saffroncity.ssf",
@@ -2125,12 +2179,6 @@
 			"guid": "ad01f0cd-9dd7-46c0-9c2f-a4ed0125adc6",
 			"file": "targettest2.ssf",
 			"file_pub": "DAT285.ssf"
-		},
-		"sectorz": {
-			"guid": "84272dba-a44c-4d4b-abe5-0a036419bdc7",
-			"file": "sectorz.ssf",
-			"file_pub": "DAT204.ssf",
-			"name": "Sector Z"
 		},
 		"targettest_marth": {
 			"guid": "1bd83e0c-c67e-4f3e-8c9c-124dfef486b8",
@@ -2167,23 +2215,11 @@
 			"file_pub": "DAT112.ssf",
 			"name": "Hueco Mundo"
 		},
-		"yoshisisland": {
-			"guid": "9fc1f800-5aae-45f4-8979-9f605a86d2af",
-			"file": "yoshisisland.ssf",
-			"file_pub": "DAT0.ssf",
-			"name": "Yoshi's Island"
-		},
 		"nintendo3ds": {
 			"guid": "35d7b2e5-4bba-478e-8113-0620149a3b48",
 			"file": "nintendo3ds.ssf",
 			"file_pub": "DAT122.ssf",
 			"name": "Nintendo 3DS"
-		},
-		"saturnvalley": {
-			"guid": "e16b7535-9a52-4426-bf49-92470e6eade8",
-			"file": "saturnvalley.ssf",
-			"file_pub": "DAT41.ssf",
-			"name": "Saturn Valley"
 		},
 		"targettest_pikachu": {
 			"guid": "b4656fee-7ff9-47bc-ab1a-4ee99bd7b5de",
@@ -2217,7 +2253,7 @@
 			"file_pub": "DAT148.ssf"
 		},
 		">>> BETA_MARKS": {},
-		"blizzardbuffalo": {
+			"blizzardbuffalo": {
 			"guid": "84272dba-a44c-4d4b-abe5-0a036419bdc7",
 			"file": "blizzardbuffalo_ChickenZ.ssf",
 			"file_pub": "DATBlizzardBuffalo.ssf",
@@ -3558,7 +3594,7 @@
 				["fancyshop", "gamer", "greengreen", "hongkong97", "innerworld", "jevilstage", "kingdicestage", "loungetown", "mariocircuit", "mmzerostage", "mutecity", "polus"],
 				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "afinfierno"],
 			["huecomundonew", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed"],
-			["DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "random"]
+			["DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "twilighttownnew", "random"]
 			]
 		}
 	},
@@ -3646,7 +3682,7 @@
 	},
 	"random_stages": {
 		"stages": ["battlefield", "finaldestination", "metalcavern", "tinystage", "galaxytours", "mushroomkingdom3", "yoshisisland", "emeraldcave", "warioware", "junglehijinx", "gangplankgalleon", "hylianskies", "clocktown", "pokemoncolosseum", "lakeofrage", "sandocean", "flatzoneplus", "rainbowroute", "butterbuilding", "meteovoyage", "palutenasshrine", "venuslighthouse", "crateria", "phase8", "saturnvalley", "devilsmachine", "desk", "casinonightzone", "skysanctuary", "chaosshrine", "lunarcore", "twilighttown", "skullfortress", "centralhighway", "pacmaze", "towerofsalvation", "bombfactory", "draculascastle", "steeldiver", "nintendo3ds", "huecomundo", "konohavillage", "finalvalley", "planetnameknew", "worldtournament", "thousandsunny", "waitingroom", "kingdom1", "peachscastle", "kingdom2", "yoshisisland64", "yoshisstory", "hyrulecastle64", "hyruletemple", "saffroncity", "dreamland", "sectorz", "fourside", "castlesiege", "smashville", "greenhillzone", "theworldthatneverwas", "skypillar", "suzakucastle", "krazoapalace", "urbanchampion", "fairyglade",
-		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed", "DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain"]
+		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed", "DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "twilighttownnew"]
 	},
 	"match_results_screen": {
 		"show_losing_team": false,
