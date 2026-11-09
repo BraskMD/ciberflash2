@@ -2501,6 +2501,7 @@
     }
   },
   {
+ 	"info": "23rd Tenkaichi",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -3126,6 +3127,7 @@
   },
   {
     "mcName": "powerPole",
+	"info": "OG Dragon Ball",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -3751,6 +3753,7 @@
   },
   {
     "mcName": "powerPole",
+	"info": "Dragon Ball GT",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -4376,6 +4379,7 @@
   },
   {
     "mcName": "powerPole",
+	"info": "Dragon Ball Daima",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -5000,6 +5004,7 @@
     }
   },
   {
+	"info": "Dragon Ball Tale",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -5625,6 +5630,7 @@
   },
   {
     "mcName": "powerPole",
+	"info": "Xeno Goku",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -6249,6 +6255,7 @@
     }
   },
   {
+	"info": "OG Tien",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -6873,6 +6880,7 @@
     }
   },
   {
+	"info": "Piccolo",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -7497,6 +7505,7 @@
     }
   },
   {
+	"info": "Vegeta",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -8121,6 +8130,7 @@
     }
   },
   {
+	"info": "Gogeta",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -8745,6 +8755,7 @@
     }
   },
   {
+	"info": "Black Goku",
     "paletteSwap": {
       "colors": [
         -13553359,
@@ -9370,6 +9381,7 @@
   },
   {
     "mcName": "powerPole",
+	"info": "SSF2 Vanilla",
     "paletteSwap": {
       "colors": [
         -13553359,
