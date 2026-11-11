@@ -1,5 +1,10 @@
 {
 	"music": {
+		"bgm_sadstatue": {
+			"guid": "e09d2db4-2bdd-4950-91e8-d9ef15d063ee",
+			"file": "bgm_sadstatue.ssf",
+			"file_pub": "bgm_sadstatue.ssf"
+		},
 		"bgm_yoshiunderground": {
 			"guid": "7b8be526-4783-4a91-91e6-40c2ac180e56",
 			"file": "bgm_yoshiunderground.ssf",
@@ -1112,6 +1117,12 @@
 	"character_xp": {},
 	"stage_xp": {},
 	"character": {
+		"chellXXDXDXDX": {
+			"file": "Chell.ssf",
+			"file_pub": "Chell.ssf",
+			"guid": "1ce8dafd-54ea-480a-a2d0-30c1e6db4dbf",
+			"name": "Chell"
+		},
 		"shadowbeta": {
 			"file": "shadowbeta.ssf",
 			"file_pub": "shadowbeta.ssf",
@@ -1534,6 +1545,36 @@
 		}
 	},
 	"stage": {
+		"studiopoliszoneact2": {
+			"guid": "4d194345-4a69-4105-b933-705439caef6e",
+			"file": "studiopoliszoneact2.ssf",
+			"file_pub": "studiopoliszoneact2.ssf",
+			"name": "Studiopolis Zone ACT 2"
+		},
+		"OFFICEFNAF": {
+			"guid": "FNAFoffice",
+			"file": "OFFICEFNAF.ssf",
+			"file_pub": "OFFICEFNAF.ssf",
+			"name": "FNAF Office"
+		},
+		"monika": {
+			"guid": "66a6acfa-ee71-45c5-b4e3-99111e6f9e93",
+			"file": "monika.ssf",
+			"file_pub": "monika.ssf",
+			"name": "Monika"
+		},
+		"waitoftheworld": {
+			"guid": "32d4c140-70f8-49f9-8e60-545829ce352b",
+			"file": "waitoftheworld.ssf",
+			"file_pub": "waitoftheworld.ssf",
+			"name": "Wait Of The World"
+		},
+		"sinnohpoke": {
+			"guid": "59e4f1df-2d8a-431d-98d7-cd87ef20e338",
+			"file": "sinnohpoke.ssf",
+			"file_pub": "sinnohpoke.ssf",
+			"name": "Sinnoh League"
+		},
 		"yoshisstory": {
 			"guid": "78ec5f26-dcf3-4699-beaf-68f43f4e5c37",
 			"file": "yoshisstory.ssf",
@@ -2495,6 +2536,110 @@
 		}
 	},
 	"character_9b": {
+		"VEGITOV2": {
+			"file": "VEGITOV2.ssf",
+			"file_pub": "VEGITOV2.ssf",
+			"guid": "1ce8dafd-54ea-480a-a2d0-30c1e6db4dbf",
+			"name": "Vegito"
+		},
+		"SPONGEBOB": {
+			"file": "SPONGEBOB.ssf",
+			"file_pub": "SPONGEBOB.ssf",
+			"guid": "946e3554-6365-4321-8a04-aeac03dba42a",
+			"name": "Bob Esponja"
+		},
+		"Lincolnxdxd": {
+			"file": "LINCOLN.ssf",
+			"file_pub": "LINCOLN.ssf",
+			"guid": "45af93ac-000a-4b46-b897-f7cc4a79d50b",
+			"name": "Lincoln"
+		},
+		"eggman": {
+			"file": "EGGMAN.ssf",
+			"file_pub": "EGGMAN.ssf",
+			"guid": "f207f49e-ebb8-462c-a8be-0d5b7aced723",
+			"name": "Eggman"
+		},
+		"blue": {
+			"file": "blue.ssf",
+			"file_pub": "blue.ssf",
+			"guid": null,
+			"name": "Blue"
+		},
+		"blade": {
+			"file": "blade.ssf",
+			"file_pub": "blade.ssf",
+			"guid": null,
+			"name": "Blade"
+		},
+		"gohanmistico": {
+			"file": "GOHAND.ssf",
+			"file_pub": "GOHAND.ssf",
+			"guid": "5d6c002f-a4cf-443b-b11d-c8b71992d8df",
+			"name": "Gohan Definitivo"
+		},
+		"gojo": {
+			"file": "gojo.ssf",
+			"file_pub": "gojo.ssf",
+			"guid": null,
+			"name": "Gojo"
+		},
+		"Raditztheraditz": {
+			"file": "Raditz.ssf",
+			"file_pub": "Raditz.ssf",
+			"guid": "96fcc26e-bfff-473d-b46f-b430f92186ff",
+			"name": "Raditz"
+		},
+		"holasoyolimarmamamia": {
+			"file": "olimar.ssf",
+			"file_pub": "olimar.ssf",
+			"guid": "df1d29b0-875f-4ff8-96ca-f976becaad13",
+			"name": "Olimar"
+		},
+		"holasoymariobrosxdlolaaagria": {
+			"file": "MARIOREVAMP.ssf",
+			"file_pub": "MARIOREVAMP.ssf",
+			"guid": "c9af9aae-808b-4bd4-a2e4-c7ab628fc420",
+			"name": "Mario (Revamped)"
+		},
+		"messi": {
+			"file": "messi.ssf",
+			"file_pub": "messi.ssf",
+			"guid": null,
+			"name": "mesi"
+		},
+		"holaxddd": {
+			"file": "gombol.ssf",
+			"file_pub": "gombol.ssf",
+			"guid": "b4768513-c851-4f19-8c73-6f18e4f27b64",
+			"name": "Gumball"
+		},
+		"beatsandro": {
+			"file": "beat.ssf",
+			"file_pub": "beat.ssf",
+			"guid": "5eb854c5-9b37-4b29-90d7-6bf7ed42e8a3",
+			"name": "Beat",
+			"seriesIcon": "DragonBallsign"
+		},
+		"androidshadow": {
+			"file": "shadowandroid.ssf",
+			"file_pub": "shadowandroid.ssf",
+			"guid": "208d0989-88ce-449f-8046-74e0d5ddc9d0",
+			"name": "Shadow Android"
+		},
+		"masturhand": {
+			"file": "master.ssf",
+			"file_pub": "master.ssf",
+			"guid": "118691d5-85c2-416b-b313-6969966f3502",
+			"name": "Master Hand"
+		},
+		"zaiko": {
+			"file": "zaiko.ssf",
+			"file_pub": "zaiko.ssf",
+			"guid": "7bd3efe6-8509-437d-ae4e-d61a70648e8c",
+			"name": "Zaiko",
+			"seriesIcon": "DragonBallsign"
+		},
 		"betacuck": {
 			"file": "Beta.ssf",
 			"file_pub": "Beta.ssf",
@@ -3578,7 +3723,8 @@
 		"rows_4_name": "BROKEN",
 		"rows_4": [
 			["gohanblanco", "evilgokutwo", "vegito", "chuck", "timou_ronald", "sanic", "uganknux", "tien", "zoro", "cristiano", "bossbaby", "banjokazooie", "hero"],
-			["", "freddyssj3", "GOTEN", "gokubd3", "mephilesxd", "gokumuiputo", "betacuck"]
+			["", "freddyssj3", "GOTEN", "gokubd3", "mephilesxd", "gokumuiputo", "betacuck", "zaiko", "masturhand", "androidshadow", "beatsandro", "holaxddd", "messi"],
+			["holasoymariobrosxdlolaaagria", "holasoyolimarmamamia", "Raditztheraditz", "gojo", "gohanmistico", "chellXXDXDXDX", "blade", "blue", "eggman", "Lincolnxdxd", "SPONGEBOB", "VEGITOV2"]
 		]
 	},
 	"stage_select_screen": {
@@ -3601,7 +3747,8 @@
 				["fancyshop", "gamer", "greengreen", "hongkong97", "innerworld", "jevilstage", "kingdicestage", "loungetown", "mariocircuit", "mmzerostage", "mutecity", "polus"],
 				["sewerscrusade", "thrillerbark", "trainingroompm", "wariocastlepm", "zcity", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "afinfierno"],
 			["huecomundonew", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed"],
-			["DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "twilighttownnew", "random"]
+			["DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "twilighttownnew", "sinnohpoke", "waitoftheworld", "monika", "OFFICEFNAF"],
+			["studiopoliszoneact2", "random"]
 			]
 		}
 	},
@@ -3684,12 +3831,12 @@
 			"buggy", "enel", "moria", "kidnaruto", "ksasuke", "kakashi", "itachi", "joseph_joestar", "josuke_higashikata", "kira", "sansmetal", "doggotedd", "vergil",
 			"jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "saitama", "ppp", "oldma", "yusuke", "kyo", "fleetwayamyremastered",
 			"knuckles", "shadow", "silver", "sanic", "uganknux", "zeta", "chuck", "rena", "hanyuu", "takano", "knight", "kidbuu", "buu","nazo", "gengar", "emerl","cammy", "fang",
-			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "mewtwo", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom", "littlemac", "sonicxp", "sonicxp2", "zoro", "cristiano", "homelander", "bossbaby", "knucklessf", "gokusf", "banjokazooie", "hero", "shadowbeta", "freddyssj3", "GOTEN", "gokubd3", "mephilesxd", "gokumuiputo", "betacuck"],
+			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "mewtwo", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom", "littlemac", "sonicxp", "sonicxp2", "zoro", "cristiano", "homelander", "bossbaby", "knucklessf", "gokusf", "banjokazooie", "hero", "shadowbeta", "freddyssj3", "GOTEN", "gokubd3", "mephilesxd", "gokumuiputo", "betacuck", "zaiko", "masturhand", "androidshadow", "beatsandro", "holaxddd", "messi", "holasoymariobrosxdlolaaagria", "holasoyolimarmamamia", "Raditztheraditz", "gojo", "gohanmistico", "chellXXDXDXDX", "blade", "blue", "eggman", "Lincolnxdxd", "SPONGEBOB", "VEGITOV2"],
 		"classic_characters": ["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "shovel_knight", "donkeykong", "link", "zelda", "sheik", "ganondorf", "pikachu", "pichu", "jigglypuff", "lucario", "kirby", "metaknight", "bandanadee", "fox", "falco", "krystal", "samus", "zamus", "captainfalcon", "ness", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "sonic", "tails", "megaman", "ryu", "pacman", "lloyd", "simon", "bomberman", "blackmage", "sora", "rayman", "goku", "luffy", "naruto", "ichigo", "sandbag"]
 	},
 	"random_stages": {
 		"stages": ["battlefield", "finaldestination", "metalcavern", "tinystage", "galaxytours", "mushroomkingdom3", "yoshisisland", "emeraldcave", "warioware", "junglehijinx", "gangplankgalleon", "hylianskies", "clocktown", "pokemoncolosseum", "lakeofrage", "sandocean", "flatzoneplus", "rainbowroute", "butterbuilding", "meteovoyage", "palutenasshrine", "venuslighthouse", "crateria", "phase8", "saturnvalley", "devilsmachine", "desk", "casinonightzone", "skysanctuary", "chaosshrine", "lunarcore", "twilighttown", "skullfortress", "centralhighway", "pacmaze", "towerofsalvation", "bombfactory", "draculascastle", "steeldiver", "nintendo3ds", "huecomundo", "konohavillage", "finalvalley", "planetnameknew", "worldtournament", "thousandsunny", "waitingroom", "kingdom1", "peachscastle", "kingdom2", "yoshisisland64", "yoshisstory", "hyrulecastle64", "hyruletemple", "saffroncity", "dreamland", "sectorz", "fourside", "castlesiege", "smashville", "greenhillzone", "theworldthatneverwas", "skypillar", "suzakucastle", "krazoapalace", "urbanchampion", "fairyglade",
-		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed", "DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "twilighttownnew"]
+		"aetherhigh", "burnedtower", "snowpointtemple", "palaceoftwilight", "deck", "heaven", "seaoffragments", "floatingisland", "huecomundonew", "phase8new", "bowserscastlenew", "fangstage", "apusevadelossimpson", "GREATBAY", "tabuusresidence", "triplebaka", "phill", "ShibuyaTerminal", "dragonmogolico", "lordzed", "DBM", "lapislazulitower", "itsoverisntstage", "olympus", "waterfallut", "multigrain", "twilighttownnew", "sinnohpoke", "waitoftheworld", "monika", "OFFICEFNAF", "studiopoliszoneact2"]
 	},
 	"match_results_screen": {
 		"show_losing_team": false,

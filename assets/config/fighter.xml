@@ -1060,7 +1060,61 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	<fighter id="gokumuiputo" alternateID="" charName="Goku MUI" cssName="GOKU MUI" info="By reva" txtNumber="12">
 		<resource portrait="assets/char_portrait/gokumuiputo.png" icon="assets/char_icon/gokumuiputo_css.png" fs_cutin="assets/char_triangle/gokumuiputo_triangle.png" costume_data=""/>
 	</fighter>
-	<fighter id="betacuck" alternateID="" charName="Beta" cssName="BETA" info="By superswap &#10;&#10;Movelist:-&#10;&#10;- Jab : keep holding the attack botton to continue the combo.&#10;&#10;- N-Speciel : Fully charge the attack to fire 3 blasts.&#10;&#10;- S-special : Homming missles (launches forward).&#10;&#10;- U-special : Homming missles (launches upward).&#10;&#10;- D-special : Will charge up energy each time. after the third charge Beta will unleash a powerful blast. &#10;&#10;- grab(air) : pressing the grab botton while in the air will make Beta execute a quick vanish movement(has a cooldown).&#10;&#10;- Final smash : Gamma blast mkll." txtNumber="12">
+	<fighter id="betacuck" alternateID="" charName="Beta" cssName="BETA" info="By superswap &#10;&#10;&#10;- Jab : keep holding the attack botton to continue the combo.&#10;&#10;- N-Speciel : Fully charge the attack to fire 3 blasts.&#10;&#10;- S-special : Homming missles (launches forward).&#10;&#10;- U-special : Homming missles (launches upward).&#10;&#10;- D-special : Will charge up energy each time. after the third charge Beta will unleash a powerful blast. &#10;&#10;- grab(air) : pressing the grab botton while in the air will make Beta execute a quick vanish movement(has a cooldown).&#10;&#10;- Final smash : Gamma blast mkll." txtNumber="12">
 		<resource portrait="assets/char_portrait/betacuck.png" icon="assets/char_icon/betacuck_css.png" fs_cutin="assets/char_triangle/betacuck_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="zaiko" alternateID="" charName="Zaiko" cssName="ZAIKO" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/zaiko.png" icon="assets/char_icon/zaiko_css.png" fs_cutin="assets/char_triangle/zaiko_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="masturhand" alternateID="" charName="Master Hand" cssName="MASTER HAND" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/masturhand.png" icon="assets/char_icon/masturhand_css.png" fs_cutin="assets/char_triangle/masturhand_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="androidshadow" alternateID="" charName="Shadow Android" cssName="Shadow Android" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/androidshadow.png" icon="assets/char_icon/androidshadow_css.png" fs_cutin="assets/char_triangle/androidshadow_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="beatsandro" alternateID="" charName="Beat" cssName="BEAT" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/beatsandro.png" icon="assets/char_icon/beatsandro_css.png" fs_cutin="assets/char_triangle/beatsandro_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="holaxddd" alternateID="" charName="Gumball" cssName="GUMBALL" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/holaxddd.png" icon="assets/char_icon/holaxddd_css.png" fs_cutin="assets/char_triangle/holaxddd_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="messi" alternateID="" charName="mesi" cssName="MESSI" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/messi.png" icon="assets/char_icon/messi_css.png" fs_cutin="assets/char_triangle/messi_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="holasoymariobrosxdlolaaagria" alternateID="" charName="Mario (Revamped)" cssName="MARIO" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/holasoymariobrosxdlolaaagria.png" icon="assets/char_icon/holasoymariobrosxdlolaaagria_css.png" fs_cutin="assets/char_triangle/holasoymariobrosxdlolaaagria_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="holasoyolimarmamamia" alternateID="" charName="Olimar" cssName="OLIMAR" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/holasoyolimarmamamia.png" icon="assets/char_icon/holasoyolimarmamamia_css.png" fs_cutin="assets/char_triangle/holasoyolimarmamamia_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="Raditztheraditz" alternateID="" charName="Raditz" cssName="RADITZ" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/Raditztheraditz.png" icon="assets/char_icon/Raditztheraditz_css.png" fs_cutin="assets/char_triangle/Raditztheraditz_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="gojo" alternateID="" charName="Gojo" cssName="GOJO" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/gojo.png" icon="assets/char_icon/gojo_css.png" fs_cutin="assets/char_triangle/gojo_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="gohanmistico" alternateID="" charName="Gohan Definitivo" cssName="GOHAN" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/gohanmistico.png" icon="assets/char_icon/gohanmistico_css.png" fs_cutin="assets/char_triangle/gohanmistico_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="chellXXDXDXDX" alternateID="" charName="Chell" cssName="CHELL" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/chellXXDXDXDX.png" icon="assets/char_icon/chellXXDXDXDX_css.png" fs_cutin="assets/char_triangle/chellXXDXDXDX_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="blade" alternateID="" charName="Blade" cssName="BLADE" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/blade.png" icon="assets/char_icon/blade_css.png" fs_cutin="assets/char_triangle/blade_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="blue" alternateID="" charName="Blue" cssName="BLUE" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/blue.png" icon="assets/char_icon/blue_css.png" fs_cutin="assets/char_triangle/blue_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="eggman" alternateID="" charName="Eggman" cssName="EGGMAN" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/eggman.png" icon="assets/char_icon/eggman_css.png" fs_cutin="assets/char_triangle/eggman_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="Lincolnxdxd" alternateID="" charName="Lincoln" cssName="LINCOLN" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/Lincolnxdxd.png" icon="assets/char_icon/Lincolnxdxd_css.png" fs_cutin="assets/char_triangle/Lincolnxdxd_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="SPONGEBOB" alternateID="" charName="Bob Esponja" cssName="BOB ESPONJA" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/SPONGEBOB.png" icon="assets/char_icon/SPONGEBOB_css.png" fs_cutin="assets/char_triangle/SPONGEBOB_triangle.png" costume_data=""/>
+	</fighter>
+	<fighter id="VEGITOV2" alternateID="" charName="Vegito" cssName="VEGITO" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/VEGITOV2.png" icon="assets/char_icon/VEGITOV2_css.png" fs_cutin="assets/char_triangle/VEGITOV2_triangle.png" costume_data=""/>
 	</fighter>
 </fighter_config>

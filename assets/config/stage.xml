@@ -1,6 +1,11 @@
 ﻿<stages_config>	
 	
 	<!-- External Stage Assets -->
+	<stage id="studiopoliszoneact2" previewURL="assets/stage_preview/studiopoliszoneact2.png"/>
+	<stage id="OFFICEFNAF" previewURL="assets/stage_preview/OFFICEFNAF.png"/>
+	<stage id="monika" previewURL="assets/stage_preview/monika.png"/>
+	<stage id="waitoftheworld" previewURL="assets/stage_preview/waitoftheworld.png"/>
+	<stage id="sinnohpoke" previewURL="assets/stage_preview/sinnohpoke.png"/>
 	<stage id="yoshisstory" previewURL="assets/stage_preview/yoshisstory.png"/>
 	<stage id="yoshisisland" previewURL="assets/stage_preview/yoshisisland.png"/>
 	<stage id="twilighttownnew" previewURL="assets/stage_preview/twilighttownnew.png"/>
