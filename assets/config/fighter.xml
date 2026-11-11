@@ -1060,4 +1060,7 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	<fighter id="gokumuiputo" alternateID="" charName="Goku MUI" cssName="GOKU MUI" info="By reva" txtNumber="12">
 		<resource portrait="assets/char_portrait/gokumuiputo.png" icon="assets/char_icon/gokumuiputo_css.png" fs_cutin="assets/char_triangle/gokumuiputo_triangle.png" costume_data=""/>
 	</fighter>
+	<fighter id="betacuck" alternateID="" charName="Beta" cssName="BETA" info="By superswap &#10;&#10;Movelist:-&#10;&#10;- Jab : keep holding the attack botton to continue the combo.&#10;&#10;- N-Speciel : Fully charge the attack to fire 3 blasts.&#10;&#10;- S-special : Homming missles (launches forward).&#10;&#10;- U-special : Homming missles (launches upward).&#10;&#10;- D-special : Will charge up energy each time. after the third charge Beta will unleash a powerful blast. &#10;&#10;- grab(air) : pressing the grab botton while in the air will make Beta execute a quick vanish movement(has a cooldown).&#10;&#10;- Final smash : Gamma blast mkll." txtNumber="12">
+		<resource portrait="assets/char_portrait/betacuck.png" icon="assets/char_icon/betacuck_css.png" fs_cutin="assets/char_triangle/betacuck_triangle.png" costume_data=""/>
+	</fighter>
 </fighter_config>
