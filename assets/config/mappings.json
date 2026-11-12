@@ -2536,6 +2536,132 @@
 		}
 	},
 	"character_9b": {
+		"michael": {
+			"file": "michael.ssf",
+			"file_pub": "michael.ssf",
+			"guid": null,
+			"name": "Michael Jackson"
+		},
+		"rob": {
+			"file": "rob.ssf",
+			"file_pub": "rob.ssf",
+			"guid": null,
+			"name": "R.O.B."
+		},
+		"rouge": {
+			"file": "rouge.ssf",
+			"file_pub": "rouge.ssf",
+			"guid": null,
+			"name": "Rouge"
+		},
+		"peppino": {
+			"file": "peppino.ssf",
+			"file_pub": "peppino.ssf",
+			"guid": null,
+			"name": "Peppino"
+		},
+		"palutena": {
+			"file": "palutena.ssf",
+			"file_pub": "palutena.ssf",
+			"guid": null,
+			"name": "Palutena"
+		},
+		"papyrus": {
+			"file": "papyrus.ssf",
+			"file_pub": "papyrus.ssf",
+			"guid": null,
+			"name": "Papyrus"
+		},
+		"sanji": {
+			"file": "sanji.ssf",
+			"file_pub": "sanji.ssf",
+			"guid": null,
+			"name": "Sanji"
+		},
+		"ike": {
+			"file": "ike.ssf",
+			"file_pub": "ike.ssf",
+			"guid": null,
+			"name": "Ike"
+		},
+		"beast": {
+			"file": "beast.ssf",
+			"file_pub": "beast.ssf",
+			"guid": null,
+			"name": "Beast Gohan"
+		},
+		"ylink": {
+			"file": "ylink.ssf",
+			"file_pub": "ylink.ssf",
+			"guid": null,
+			"name": "Young Link"
+		},
+		"hatkid": {
+			"file": "hatkid.ssf",
+			"file_pub": "hatkid.ssf",
+			"guid": null,
+			"name": "Hat Kid"
+		},
+		"narutosm": {
+			"file": "narutosm.ssf",
+			"file_pub": "narutosm.ssf",
+			"guid": "70ecaf91-f51c-48a1-8435-65ae2e239611",
+			"name": "Naruto Sage Mode"
+		},
+		"mordo": {
+			"file": "mordo.ssf",
+			"file_pub": "mordo.ssf",
+			"guid": "8a8e7ad7-43e0-4de8-b30c-3f61bc40fd6c",
+			"name": "Mordecai & Rigby"
+		},
+		"elecman": {
+			"file": "elecman.ssf",
+			"file_pub": "elecman.ssf",
+			"guid": "8052c70e-b03d-40b4-96f7-4d68603623e6",
+			"name": "Elecman"
+		},
+		"SCEPTILE2": {
+			"file": "sceptilev2.ssf",
+			"file_pub": "sceptilev2.ssf",
+			"guid": "a51529e9-49a6-4057-a4e3-9e0a8649d4df",
+			"name": "Sceptile"
+		},
+		"coraje": {
+			"file": "coraje.ssf",
+			"file_pub": "coraje.ssf",
+			"guid": "7e4c3781-52bb-4fcc-8118-ebecb5b0445c",
+			"name": "Coraje"
+		},
+		"perfect": {
+			"file": "CELL.ssf",
+			"file_pub": "CELL.ssf",
+			"guid": "311aef5c-c186-4b22-b7ae-99e10dbfd3f1",
+			"name": "Perfect Cell"
+		},
+		"keflalalkafsl": {
+			"file": "kefla.ssf",
+			"file_pub": "kefla.ssf",
+			"guid": "e22355f0-70f1-4638-9322-6e5053406683",
+			"name": "Kefla"
+		},
+		"janemba": {
+			"file": "janemba.ssf",
+			"file_pub": "janemba.ssf",
+			"guid": "bc058ad7-3f38-4f31-b11e-75a0e9cfaf9f",
+			"name": "Janemba"
+		},
+		"funkykong": {
+			"file": "funky.ssf",
+			"file_pub": "funky.ssf",
+			"guid": "fb1739b1-4408-4228-8d70-feb15289343a",
+			"name": "Funky Kong"
+		},
+		"luigirevamped": {
+			"file": "luigirevamp.ssf",
+			"file_pub": "luigirevamp.ssf",
+			"guid": "934ea7ab-b9c1-4759-b32c-39764ec7fe39",
+			"name": "Luigi"
+		},
 		"VEGITOV2": {
 			"file": "VEGITOV2.ssf",
 			"file_pub": "VEGITOV2.ssf",
@@ -3724,7 +3850,9 @@
 		"rows_4": [
 			["gohanblanco", "evilgokutwo", "vegito", "chuck", "timou_ronald", "sanic", "uganknux", "tien", "zoro", "cristiano", "bossbaby", "banjokazooie", "hero"],
 			["", "freddyssj3", "GOTEN", "gokubd3", "mephilesxd", "gokumuiputo", "betacuck", "zaiko", "masturhand", "androidshadow", "beatsandro", "holaxddd", "messi"],
-			["holasoymariobrosxdlolaaagria", "holasoyolimarmamamia", "Raditztheraditz", "gojo", "gohanmistico", "chellXXDXDXDX", "blade", "blue", "eggman", "Lincolnxdxd", "SPONGEBOB", "VEGITOV2"]
+			["holasoymariobrosxdlolaaagria", "holasoyolimarmamamia", "Raditztheraditz", "gojo", "gohanmistico", "chellXXDXDXDX", "blade", "blue", "eggman", "Lincolnxdxd", "SPONGEBOB", "VEGITOV2", "luigirevamped"],
+			["funkykong", "janemba", "keflalalkafsl", "perfect", "coraje", "SCEPTILE2", "elecman", "mordo", "narutosm", "hatkid", "ylink", "beast", "ike"],
+			["sanji", "papyrus", "palutena", "peppino", "rouge", "rob", "michael"]
 		]
 	},
 	"stage_select_screen": {
@@ -3831,7 +3959,7 @@
 			"buggy", "enel", "moria", "kidnaruto", "ksasuke", "kakashi", "itachi", "joseph_joestar", "josuke_higashikata", "kira", "sansmetal", "doggotedd", "vergil",
 			"jevil", "spamton", "queen", "plague_knight", "king_knight", "percy", "mr_hat", "phantom_striker", "saitama", "ppp", "oldma", "yusuke", "kyo", "fleetwayamyremastered",
 			"knuckles", "shadow", "silver", "sanic", "uganknux", "zeta", "chuck", "rena", "hanyuu", "takano", "knight", "kidbuu", "buu","nazo", "gengar", "emerl","cammy", "fang",
-			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "mewtwo", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom", "littlemac", "sonicxp", "sonicxp2", "zoro", "cristiano", "homelander", "bossbaby", "knucklessf", "gokusf", "banjokazooie", "hero", "shadowbeta", "freddyssj3", "GOTEN", "gokubd3", "mephilesxd", "gokumuiputo", "betacuck", "zaiko", "masturhand", "androidshadow", "beatsandro", "holaxddd", "messi", "holasoymariobrosxdlolaaagria", "holasoyolimarmamamia", "Raditztheraditz", "gojo", "gohanmistico", "chellXXDXDXDX", "blade", "blue", "eggman", "Lincolnxdxd", "SPONGEBOB", "VEGITOV2"],
+			"metalsonic", "megamanx", "gohan", "jotaro", "mmzero", "mewtwo", "zero", "rosy", "spidey", "piccolo", "anakin", "vegeta", "vegetaps", "terry", "kingdedede", "vergilps", "gokurevrev", "soold", "shadowv2", "mighty", "blaze", "sally", "lucas", "vegito", "gogetassj4", "bills", "naturo", "sakuke", "dante", "vergil_nicolas", "terry", "freddy", "anakin", "skibidi_toilet", "saber", "chang", "sunic", "uryu", "cloud", "darksamus", "goku9b", "firesonic", "multimario", "gohanteen", "incineroar", "brolys", "sansnokia", "diocbh", "timou_dio", "gogetadbs", "jiren", "ganadorf", "exaltmarth", "el_chavo", "jotarocbh", "silverr", "darkspine", "scourge", "bardock", "selkadoom", "littlemac", "sonicxp", "sonicxp2", "zoro", "cristiano", "homelander", "bossbaby", "knucklessf", "gokusf", "banjokazooie", "hero", "shadowbeta", "freddyssj3", "GOTEN", "gokubd3", "mephilesxd", "gokumuiputo", "betacuck", "zaiko", "masturhand", "androidshadow", "beatsandro", "holaxddd", "messi", "holasoymariobrosxdlolaaagria", "holasoyolimarmamamia", "Raditztheraditz", "gojo", "gohanmistico", "chellXXDXDXDX", "blade", "blue", "eggman", "Lincolnxdxd", "SPONGEBOB", "VEGITOV2", "luigirevamped", "cell", "coraje", "funkykong", "janemba", "keflalalkafsl", "mordorigby", "perfect", "SCEPTILE2", "elecman", "mordo", "narutosm", "hatkid", "ylink", "beast", "ike", "sanji", "papyrus", "palutena", "peppino", "rouge", "rob", "michael"],
 		"classic_characters": ["mario", "luigi", "peach", "bowser", "yoshi", "wario", "waluigi", "shovel_knight", "donkeykong", "link", "zelda", "sheik", "ganondorf", "pikachu", "pichu", "jigglypuff", "lucario", "kirby", "metaknight", "bandanadee", "fox", "falco", "krystal", "samus", "zamus", "captainfalcon", "ness", "marth", "pit", "isaac", "chibirobo", "gameandwatch", "sonic", "tails", "megaman", "ryu", "pacman", "lloyd", "simon", "bomberman", "blackmage", "sora", "rayman", "goku", "luffy", "naruto", "ichigo", "sandbag"]
 	},
 	"random_stages": {
