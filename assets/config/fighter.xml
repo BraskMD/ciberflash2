@@ -1126,6 +1126,10 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	</fighter>
 	<fighter id="keflalalkafsl" alternateID="" charName="Kefla" cssName="KEFLA" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/keflalalkafsl.png" icon="assets/char_icon/keflalalkafsl_css.png" fs_cutin="assets/char_triangle/keflalalkafsl_triangle.png" costume_data=""/>
+
+	</fighter>
+	<fighter id="janemba" alternateID="" charName="Janemba" cssName="JANEMBA" info="" txtNumber="12">
+		<resource portrait="assets/char_portrait/janemba.png" icon="assets/char_icon/janemba_css.png" fs_cutin="assets/char_triangle/janemba_triangle.png" costume_data=""/>
 	
 	</fighter>
 	<fighter id="perfect" alternateID="" charName="Perfect Cell" cssName="CELL" info="" txtNumber="12">
