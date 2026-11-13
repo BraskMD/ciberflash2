@@ -1072,7 +1072,7 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	<fighter id="androidshadow" alternateID="" charName="Shadow Android" cssName="Shadow Android" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/androidshadow.png" icon="assets/char_icon/androidshadow_css.png" fs_cutin="assets/char_triangle/androidshadow_triangle.png" costume_data=""/>
 	</fighter>
-	<fighter id="beatsandro" alternateID="" charName="Beat" cssName="BEAT" info="" txtNumber="12">
+	<fighter id="beatsandro" alternateID="" charName="El Guardian" cssName="BEAT" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/beatsandro.png" icon="assets/char_icon/beatsandro_css.png" fs_cutin="assets/char_triangle/beatsandro_triangle.png" costume_data=""/>
 	</fighter>
 	<fighter id="holaxddd" alternateID="" charName="Gumball" cssName="GUMBALL" info="" txtNumber="12">
@@ -1089,9 +1089,6 @@ fs_cutin = "assets/char_triangle/shovelknight_triangle.png"
 	</fighter>
 	<fighter id="Raditztheraditz" alternateID="" charName="Raditz" cssName="RADITZ" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/Raditztheraditz.png" icon="assets/char_icon/Raditztheraditz_css.png" fs_cutin="assets/char_triangle/Raditztheraditz_triangle.png" costume_data=""/>
-	</fighter>
-	<fighter id="gojo" alternateID="" charName="Gojo" cssName="GOJO" info="" txtNumber="12">
-		<resource portrait="assets/char_portrait/gojo.png" icon="assets/char_icon/gojo_css.png" fs_cutin="assets/char_triangle/gojo_triangle.png" costume_data=""/>
 	</fighter>
 	<fighter id="gohanmistico" alternateID="" charName="Gohan Definitivo" cssName="GOHAN" info="" txtNumber="12">
 		<resource portrait="assets/char_portrait/gohanmistico.png" icon="assets/char_icon/gohanmistico_css.png" fs_cutin="assets/char_triangle/gohanmistico_triangle.png" costume_data=""/>
